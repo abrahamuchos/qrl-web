@@ -21,3 +21,28 @@ html,body{
     margin: 0 auto;
   }
 }
+
+@layer utilities{
+  .base{
+    @apply text-base lg:text-3xl;
+  }
+
+  .heading-1-bold{
+    @apply text-2xl lg:text-6xl font-bold;
+  }
+
+  .heading-2-semi{
+    @apply text-xl lg:text-5xl font-semibold;
+  }
+  .heading-2-bold{
+    @apply text-xl lg:text-5xl font-bold;
+  }
+
+  .heading-3{
+    @apply text-lg lg:text-4xl;
+  }
+  .heading-3-bold{
+    @apply text-lg lg:text-4xl font-bold;
+  }
+
+}
