@@ -10,7 +10,7 @@ export default function Hero() {
 
   return (
     <div className='hero'>
-      <Lottie animationData={trazoHome} loop={true}/>
+      <Lottie animationData={trazoHome} loop={true} style={{height: '100%'}}/>
     </div>
   );
 }
