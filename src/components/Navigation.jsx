@@ -43,7 +43,7 @@ export default function Navigation() {
 
 
   return (
-    <nav className='fixed top-0 z-50 w-full flex flex-col justify-center items-center lg:top-4'>
+    <nav className='absolute top-0 z-50 w-full flex flex-col justify-center items-center lg:top-4'>
       <div className="flex w-full justify-between items-center py-1 px-6 backdrop-blur-sm bg-white/20 ring-1 ring-black/5
         lg:m-2 lg:py-1 lg:px-16 lg:w-[95%] lg:rounded-2xl lg:shadow-lg
         xl:w-[90%]

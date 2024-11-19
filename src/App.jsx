@@ -12,6 +12,7 @@ import Roadmap from "./pages/Roadmap.jsx";
 import TradeUnionStrategy from "./pages/TradeUnionStrategy.jsx";
 import NotFound from "./pages/NotFound.jsx";
 import TermsConditions from "./pages/TermsConditions.jsx";
+import BaseLayout from "./layouts/BaseLayout.jsx";
 
 function App() {
 
@@ -62,7 +63,9 @@ function App() {
 
 
   return (
-    <RouterProvider router={router}/>
+    <BaseLayout>
+      <RouterProvider router={router}/>
+    </BaseLayout>
   )
 }
 
