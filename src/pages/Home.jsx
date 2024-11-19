@@ -5,7 +5,7 @@ export default function Home() {
 
   return (
     <section className='w-full h-[90vh] bg-Dark-blue'>
-      {/*<Navigation/>*/}
+      <Navigation/>
       <Hero/>
     </section>
   );

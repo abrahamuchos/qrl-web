@@ -1,7 +1,7 @@
 import Lottie from "lottie-react";
 
 // import trazo1 from "@animations/trazo1.json";
-import trazoHome from "@animations/trazo-home.json";
+import trazoHome from "@animations/trazos-home-2.json";
 import '../styles/hero.css';
 
 
