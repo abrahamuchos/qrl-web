@@ -1,3 +1,9 @@
+@font-face {
+  font-family: "Inter";
+  src: url("assets/fonts/Inter-VariableFont_opsz,wght.ttf");
+  font-style: normal;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -10,7 +16,7 @@
 }
 
 html,body{
-  /*font-family: 'Arial', serif;*/
+  font-family: 'Inter', serif;
   max-width: 100%;
   overflow-x: hidden;
 }
