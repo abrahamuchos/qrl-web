@@ -1,42 +1,54 @@
 import Lottie from "lottie-react";
 
-// import trazo1 from "@animations/trazo1.json";
-import trazoHome from "@animations/trazos-home-2.json";
-import vectorHeroWhite from "../assets/img/vector-hero-large-white.svg";
-import '../styles/hero.css';
+import vectorHeroWhite from "../assets/img/svg/vector-short-white.svg";
+import vectorHeroLightBlue from "../assets/img/svg/vector-short-light-blue.svg";
 
 
-export default function Hero({animation, loop, title, subTitle}) {
-
+/**
+ *
+ * @param {JSON} animation - JSON animation (not dotLottie)
+ * @param {boolean} [loop=false]
+ * @param {string} title
+ * @param {string} subTitle
+ * @param {string} [vector='white'] - {'white' | 'light-blue'}
+ * @returns {JSX.Element}
+ * @constructor
+ */
+export default function Hero({animation, loop = false, title, subTitle, vector = 'white'}) {
+  const heroVector =  vector === 'light-blue' ? vectorHeroLightBlue : vectorHeroWhite;
 
   return (
-
-    //Version 2
-    <div className="h-[100vh] relative lg:h-[75vh] 3xl:h-[60vh]">
+    <div className="h-[100vh] relative lg:h-[95vh]">
       <div className="w-full h-[100%] relative bg-Dark-blue text-white overflow-hidden"
       >
-        <Lottie animationData={trazoHome} loop={false} width={'100%'} style={{zIndex: '50'}}/>
+        <Lottie
+          animationData={animation}
+          loop={loop}
+          style={{width: '100%', height: '100%'}}
+          rendererSettings={{
+            preserveAspectRatio: "xMidYMid slice"
+          }}
+        />
 
+        {/*Content*/}
         <div className="absolute top-[33%] left-[10%] w-full lg:w-[85%]">
           <div className="2xl:max-container">
             <h1 className='text-white font-Inter font-bold text-[52px] mb-2'>
-              Transformamos tu negocio, juntos.
+              {title}
             </h1>
             <h2 className='text-white font-Inter font-bold text-[30px]'>
-              Incubadora de ideas para transcender contigo
+              {subTitle}
             </h2>
           </div>
         </div>
+        {/* End Content*/}
 
       </div>
 
-      <div className="w-full h-auto absolute left-0 right-0 top-[69%]
-        lg:top-[61%]
-        xl:top-[59%]"
-      >
-        <img src={vectorHeroWhite} alt="vector" className='w-full absolute'/>
-      </div>
+      <img src={heroVector} alt="vector" className='w-full absolute bottom-[-5px]'/>
+
     </div>
+
 
   );
 }

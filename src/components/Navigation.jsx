@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 
-import logo from '../assets/img/qrl-logo.svg';
+import logo from '../assets/img/svg/qrl-logo.svg';
 
 export default function Navigation() {
 
