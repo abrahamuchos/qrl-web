@@ -7,7 +7,7 @@ export default function Navigation() {
 
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(/**@type{boolean} */ false);
   const [isOpenDropdown, setIsOpenDropdown] = useState(/**@type{boolean} */ false);
-  const [isOpenDesktopDropdown, setIsOpenDesktopDropdown] = useState(/**@type{boolean} */ false);
+  const [isOpenDesktopDropdown, setIsOpenDesktopDropdown] = useState(/**@type{boolean} */ true);
   const [timeoutId, setTimeoutId] = useState(/**@type{NodeJS.Timeout|null|number}  */ null);
 
   /**
@@ -17,24 +17,39 @@ export default function Navigation() {
     setIsMobileMenuOpen(prevState => !prevState);
   }
 
+  /**
+   * Toggle Dropdown sub menu (Mobile)
+   */
   const toggleDropdown = () => {
     setIsOpenDropdown(prevState => !prevState);
   }
 
+  /**
+   * Handle mouse enter event for desktop dropdown menu
+   */
   const handleMouseEnter = () => {
     setIsOpenDesktopDropdown(true);
   }
 
+  /**
+   * Handle mouse leave event for desktop dropdown menu
+   */
   const handleMouseLeave = () => {
     setTimeoutId(setTimeout(() => {
       setIsOpenDesktopDropdown(false);
     }, 300));
   }
 
+  /**
+   * Handle mouse enter event into dropdown menu (desktop)
+   */
   const handleDropdownMouseEnter = () => {
     clearTimeout(timeoutId);
   };
 
+  /**
+   * Handle mouse leave event on dropdown menu (desktop)
+   */
   const handleDropdownMouseLeave = () => {
     setTimeoutId(setTimeout(() => {
       setIsOpenDesktopDropdown(false);
@@ -71,7 +86,7 @@ export default function Navigation() {
             {/*Dropdown Menu Items*/}
             {isOpenDesktopDropdown && (
               <div
-                className="absolute left-1/2 top-10 transform -translate-x-1/2 top-full mt-2  bg-white/30
+                className="absolute left-1/2 top-10 transform -translate-x-1/2  mt-2  bg-white/30
                 backdrop-blur-sm shadow-lg rounded-md overflow-hidden z-50
                 lg:w-[800px]
                 xl:w-[900px]"

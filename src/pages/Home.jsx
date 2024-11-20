@@ -1,6 +1,5 @@
 import Hero from "../components/Hero.jsx";
 
-
 import trazoHome from "@animations/trazos-home-2.json";
 
 export default function Home() {
