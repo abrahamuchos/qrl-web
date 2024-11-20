@@ -8,7 +8,7 @@ export default function Home() {
     <section className='w-full'>
       <Hero
         animation={trazoHome}
-        title="Transformamos tu negocio, juntos."
+        title="Transformamos tu negocio, juntos. Hola como estas"
         subTitle="Incubadora de ideas para transcender contigo"
       />
 

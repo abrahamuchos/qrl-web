@@ -7,7 +7,7 @@ export default function Navigation() {
 
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(/**@type{boolean} */ false);
   const [isOpenDropdown, setIsOpenDropdown] = useState(/**@type{boolean} */ false);
-  const [isOpenDesktopDropdown, setIsOpenDesktopDropdown] = useState(/**@type{boolean} */ true);
+  const [isOpenDesktopDropdown, setIsOpenDesktopDropdown] = useState(/**@type{boolean} */ false);
   const [timeoutId, setTimeoutId] = useState(/**@type{NodeJS.Timeout|null|number}  */ null);
 
   /**
