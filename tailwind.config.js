@@ -9,17 +9,16 @@ export default {
       screen:{
         '3xl': '1650px'
       },
-      fontsize: {
+      fontSize: {
         xs: ['12px', '16px'],
         sm: ['14px', '20px'],
-        base: ['16px', '22px'],
-        lg: ['19px', '30px'],
-        xl: ['25px', '30px'],
-        '2xl': ['32px', '48px'],
-        '3xl': ['20px', '22px'],
-        '4xl': ['25px', '30px'],
-        '5xl': ['30px', '30px'],
-        '6xl': ['42px', '48px'],
+        base: ['16px', '1.23'],
+        lg: ['19px', '1.1'],
+        xl: ['22px', '1.1'],
+        '2xl': ['27px', '1.2'],
+        '3xl': ['32px', '1.3'],
+        '4xl': ['37px', '1.3'],
+        '5xl': ['42px', '1.4'],
       },
       colors: {
         'Very-dark-blue': '#0E253F',

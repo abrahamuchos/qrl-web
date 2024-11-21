@@ -18,8 +18,9 @@ export default function Hero({animation, loop = false, title, subTitle, vector =
   const heroVector =  vector === 'light-blue' ? vectorHeroLightBlue : vectorHeroWhite;
 
   return (
-    <div className="h-[90vh] relative lg:h-[95vh]">
-      <div className="w-full h-[100%] relative bg-Dark-blue text-white overflow-hidden"
+    <div className="h-[90vh] relative lg:h-[100vh]">
+      <div className="w-full h-[100%] relative bg-Dark-blue text-white overflow-hidden
+        max-xl:rounded-br-[70px]"
       >
         <Lottie
           animationData={animation}
@@ -55,7 +56,7 @@ export default function Hero({animation, loop = false, title, subTitle, vector =
 
       </div>
 
-      <img src={heroVector} alt="vector" className='w-full absolute bottom-[-5px]'/>
+      {/*<img src={heroVector} alt="vector" className='w-full absolute bottom-[-5px] max-md:hidden'/>*/}
 
     </div>
 

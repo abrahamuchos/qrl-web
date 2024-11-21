@@ -30,25 +30,28 @@ html,body{
 
 @layer utilities{
   .base{
-    @apply text-base lg:text-3xl;
+    @apply text-lg lg:text-xl;
   }
 
   .heading-1-bold{
-    @apply text-2xl lg:text-6xl font-bold;
+    @apply text-3xl font-bold lg:text-5xl;
   }
 
   .heading-2-semi{
-    @apply text-xl lg:text-5xl font-semibold;
+    @apply text-2xl font-semibold xl:text-3xl;
   }
   .heading-2-bold{
-    @apply text-xl lg:text-5xl font-bold;
+    @apply text-2xl font-bold xl:text-3xl;
   }
 
   .heading-3{
-    @apply text-lg lg:text-4xl;
+    @apply text-xl lg:text-2xl;
   }
   .heading-3-bold{
-    @apply text-lg lg:text-4xl font-bold;
+    @apply text-xl font-bold lg:text-2xl;
   }
 
+  .btn-primary{
+    @apply rounded-xl border-[#100D2C] border-solid border-2 px-6 py-3  text-base lg:px-7 lg:py-4
+  }
 }
