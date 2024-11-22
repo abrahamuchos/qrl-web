@@ -1,13 +1,20 @@
 import Hero from "../components/Hero.jsx";
 import Card from "../components/Card.jsx";
+import SingleCard from "../components/SingleCard.jsx";
+import Testimony from "../components/Testimony.jsx";
 
 import trazoHome from "@animations/trazos-home-2.json";
 import puzzleSingleDarkBlue from "../assets/img/puzzle-single-dark-blue.png"
 import puzzleSingleLightBlue from "../assets/img/puzzle-single-light-blue.png"
 import puzzle from "../assets/img/puzzle-desktop.png"
 import stroke from "../assets/img/stroke-1.png"
+import stroke2 from "../assets/img/stroke-2.png"
+import stroke3 from "../assets/img/stroke-3.png"
+import stroke4 from "../assets/img/stroke-4.png"
 import sindicalImg from "../assets/img/sindical-work.png";
-import SingleCard from "../components/SingleCard.jsx";
+import person1Img from '../assets/img/duliana.png';
+import person2Img from '../assets/img/gustavo.png';
+import ContainerStroke from "../components/ContainerStroke.jsx";
 
 
 export default function Home() {
@@ -53,7 +60,7 @@ export default function Home() {
             <br/>
             Impulsa tu negocio con ideas que marcan la diferencia.
           </h3>
-          <div className="flex justify-center md:justify-end">
+          <div className="flex justify-center sm:justify-end">
             <a href="/sobre-nosotros" className='btn-primary'>Descubre más</a>
           </div>
         </div>
@@ -101,8 +108,8 @@ export default function Home() {
             <SingleCard
               className='w-[190px] h-[160px] md:w-[220px]'
               content={{
-                  title: {text: '8,5%'},
-                  paragraph: {text: 'de trabajadores ha sufrido violencia durante su labor'}
+                title: {text: '8,5%'},
+                paragraph: {text: 'de trabajadores ha sufrido violencia durante su labor'}
               }}
             />
             <SingleCard
@@ -156,7 +163,132 @@ export default function Home() {
 
       {/* End Trade Union Strategy (Estrategia Sindical)*/}
 
-      <div className="bg-red-600 w-full h-[300px]"></div>
+      {/*Testimonies*/}
+      <div className="bg-white w-full">
+        <Testimony
+          className={'py-16 px-10'}
+          image={person1Img}
+          content="“Estamos convencidos que el compromiso no es una mera intención o deseo, sino un acto concreto que implica responsabilidad y lealtad hacia nuestros clientes y colaboradores. Es una manera de afirmar nuestra existencia y de darle un sentido a nuestra vida”."
+        />
+      </div>
+      {/*End  Testimonios*/}
+
+      {/*Roadmap*/}
+      <div className="w-full bg-Light-gray">
+        <div className="max-container py-16 px-10">
+          <h2 className="heading-1-bold text-Very-dark-blue mb-10">
+            Tenemos mas para tí y para empresas
+          </h2>
+
+          {/*Roadmap cards*/}
+          <div className="flex flex-col justify-center items-center">
+            <Card
+              stroke={stroke2}
+              className='w-[100%] mb-8
+                sm:w-[550px] sm:px-9 sm:py-8
+                md:w-[85%] md:px-10 md:py-8
+                lg:w-[900px] lg:px-10 lg:pb-10 lg:pt-16
+                xl:w-[1000px]'
+            >
+
+              <h2 className='heading-1-bold text-white mb-10 lg:mb-20'>
+                Tu plan de carrera, personalizado
+                <br/>
+                Trascender contigo
+              </h2>
+
+              <h3 className='heading-2-bold text-white mb-10'>
+                Descubre tu potencial y alcanza tus metas profesionales
+              </h3>
+
+              <div className="flex justify-center sm:justify-end">
+                <a href="/sobre-nosotros" className='btn-secondary'>Descubre más</a>
+              </div>
+            </Card>
+
+            <Card
+              stroke={stroke3}
+              variant='secondary'
+              className='w-[100%]
+                sm:w-[550px] sm:px-9 sm:py-8
+                md:w-[85%] md:px-10 md:py-8
+                lg:w-[900px] lg:px-10 lg:pb-10 lg:pt-16
+                xl:w-[1000px]'
+            >
+
+              <h2 className='heading-1-bold text-Regular-gray mb-10 lg:mb-20'>
+                Desarrolla tu Talento, <br className='md:hidden'/> Impulsa tu Negocio
+                <br/>
+                Corporate Roadmap
+              </h2>
+
+              <h3 className='heading-2-bold text-Regular-gray mb-10'>
+                Diseñamos planes de carrera personalizados para atraer,
+                retener y motivar a los mejores talentos.
+              </h3>
+
+              <div className="flex justify-center sm:justify-end">
+                <a href="/sobre-nosotros" className='btn-primary'>Descubre más</a>
+              </div>
+            </Card>
+
+          </div>
+          {/*End Roadmap cards*/}
+
+        </div>
+      </div>
+      {/* End Roadmap*/}
+
+      {/*Testimonies*/}
+      <div className="bg-white w-full">
+        <Testimony
+          className={'py-16 px-10'}
+          image={person2Img}
+          content={"“Los principios y valores tienen que dejar de ser únicamente un fondo de pantalla en la computadora para convertirse en parte integrante de nuestro comportamiento ético diario”."}
+        />
+      </div>
+      {/*End  Testimonios*/}
+
+    {/* Other services (Manejo de crisis y estrategias de compensación)*/}
+      <ContainerStroke className="w-full" stroke={stroke4}>
+        <div className="max-container flex flex-col justify-center items-center gap-5 py-16 px-5
+          md:flex-row md:px-10 md:items-stretch"
+        >
+
+          <Card variant='tertiary' className='w-full md:w-1/2  lg:w-[500px] flex flex-col justify-between'>
+            <h2 className='heading-1-bold text-Regular-gray mb-11'>
+              Manejo de Crisis
+            </h2>
+            <p className='heading-2-bold text-Regular-gray'>
+              Planifica para el éxito, incluso en tiempos difíciles
+            </p>
+            <div className="flex justify-center sm:justify-end mt-5">
+              <a href="/sobre-nosotros" className='btn-primary'>Descubre más</a>
+            </div>
+          </Card>
+
+          <Card variant='tertiary' className='w-full md:w-1/2 lg:w-[500px] '>
+            <h2 className='heading-1-bold text-Regular-gray mb-5'>
+              Estrategias de compensación
+            </h2>
+            <p className='heading-2-bold text-Regular-gray'>
+              Invierte en tu talento, cosecha resultados excepcionales
+            </p>
+            <div className="flex justify-center sm:justify-end mt-5">
+              <a href="/sobre-nosotros" className='btn-primary'>Descubre más</a>
+            </div>
+          </Card>
+
+
+        </div>
+      </ContainerStroke>
+
+
+      {/* End Other services (Manejo de crisis y estrategias de compensación)*/}
+
+      <div className="w-full h-[300px] bg-green-200"></div>
+
+
 
     </section>
   );

@@ -28,6 +28,7 @@ export default {
         'Light-blue': '#4990B8',
         'Dark-gray': '#D4D7DE',
         'Light-gray': '#F0F4F7',
+        'Regular-gray': '#667080',
       },
       fontFamily: {
         'Inter': ['Inter', 'sans-serif']
