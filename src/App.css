@@ -54,4 +54,9 @@ html,body{
   .btn-primary{
     @apply rounded-xl border-[#100D2C] border-solid border-2 px-6 py-3  text-base lg:px-7 lg:py-4
   }
+  .btn-secondary{
+    @apply rounded-xl border-white border-solid border-2 px-6 py-3  text-base text-white lg:px-7 lg:py-4
+  }
+
+
 }
