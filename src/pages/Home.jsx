@@ -2,6 +2,7 @@ import Hero from "../components/Hero.jsx";
 import Card from "../components/Card.jsx";
 import SingleCard from "../components/SingleCard.jsx";
 import Testimony from "../components/Testimony.jsx";
+import ContainerStroke from "../components/ContainerStroke.jsx";
 
 import trazoHome from "@animations/trazos-home-2.json";
 import puzzleSingleDarkBlue from "../assets/img/puzzle-single-dark-blue.png"
@@ -14,7 +15,7 @@ import stroke4 from "../assets/img/stroke-4.png"
 import sindicalImg from "../assets/img/sindical-work.png";
 import person1Img from '../assets/img/duliana.png';
 import person2Img from '../assets/img/gustavo.png';
-import ContainerStroke from "../components/ContainerStroke.jsx";
+
 
 
 export default function Home() {
@@ -230,7 +231,6 @@ export default function Home() {
                 <a href="/sobre-nosotros" className='btn-primary'>Descubre más</a>
               </div>
             </Card>
-
           </div>
           {/*End Roadmap cards*/}
 
@@ -248,7 +248,7 @@ export default function Home() {
       </div>
       {/*End  Testimonios*/}
 
-    {/* Other services (Manejo de crisis y estrategias de compensación)*/}
+      {/* Other services (Manejo de crisis y estrategias de compensación)*/}
       <ContainerStroke className="w-full" stroke={stroke4}>
         <div className="max-container flex flex-col justify-center items-center gap-5 py-16 px-5
           md:flex-row md:px-10 md:items-stretch"
@@ -281,10 +281,9 @@ export default function Home() {
 
         </div>
       </ContainerStroke>
-
-
       {/* End Other services (Manejo de crisis y estrategias de compensación)*/}
 
+      {/*CTS*/}
       <div className="w-full bg-Light-gray">
         <div className="max-container flex justify-center items-center p-10">
           <Card
@@ -310,8 +309,7 @@ export default function Home() {
 
         </div>
       </div>
-
-
+      {/*End CTS*/}
 
     </section>
   );
