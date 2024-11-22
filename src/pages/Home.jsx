@@ -160,7 +160,6 @@ export default function Home() {
         {/* End Percentages Mobile */}
 
       </div>
-
       {/* End Trade Union Strategy (Estrategia Sindical)*/}
 
       {/*Testimonies*/}
@@ -286,7 +285,31 @@ export default function Home() {
 
       {/* End Other services (Manejo de crisis y estrategias de compensación)*/}
 
-      <div className="w-full h-[300px] bg-green-200"></div>
+      <div className="w-full bg-Light-gray">
+        <div className="max-container flex justify-center items-center p-10">
+          <Card
+            variant='fourth'
+            className='w-[100%]
+                sm:w-[550px] sm:px-9 sm:py-8
+                md:w-[85%] md:px-10 md:py-8
+                lg:w-[900px] lg:px-10 lg:pb-10 lg:pt-16
+                xl:w-[1200px]'
+          >
+            <div className="flex flex-col justify-center items-center">
+              <h2 className="heading-1-bold text-white mb-10">
+                CTS: Tu aliado legal laboral en la nube
+              </h2>
+
+              <p className="heading-3-bold text-white mb-10">
+                Centraliza, automatiza y colabora en un solo lugar
+              </p>
+
+              <a href="" className='btn-tertiary'>Próximamente</a>
+            </div>
+          </Card>
+
+        </div>
+      </div>
 
 
 

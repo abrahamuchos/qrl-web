@@ -58,5 +58,9 @@ html,body{
     @apply rounded-xl border-white border-solid border-2 px-6 py-3  text-base text-white lg:px-7 lg:py-4
   }
 
+  .btn-tertiary{
+    @apply rounded-xl bg-white border-white border-solid border-2 px-6 py-3  text-base text-Regular-gray lg:px-7 lg:py-4
+  }
+
 
 }

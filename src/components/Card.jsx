@@ -1,19 +1,32 @@
+/**
+ *
+ * @param {string|undefined} stroke
+ * @param {string|undefined} className
+ * @param {JSX.Element|undefined} children
+ * @param {('primary'|'secondary'|'tertiary'|'fourth')} [variant='primary']
+ * @returns {JSX.Element}
+ * @constructor
+ */
 export default function Card({stroke, className, children, variant = 'primary'}) {
   let style;
 
-  if(variant === 'secondary'){
+  if (variant === 'secondary') {
     style = {
       backgroundImage: `url(${stroke}), linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5))`,
       backgroundSize: 'cover',
       backgroundRepeat: 'no-repeat',
       backgroundPosition: 'center',
     }
-  }else if(variant === 'tertiary'){
+  } else if (variant === 'tertiary') {
     style = {
       backgroundColor: 'white'
     }
+  } else if (variant === 'fourth') {
+    style = {
+      backgroundColor: '#092F51' // Very Dark Blue
+    }
 
-  }else{
+  } else {
     style = {
       backgroundImage: `url(${stroke}), linear-gradient(97.375deg, #092F51 24%, #4990B8 97%)`,
       backgroundSize: 'cover',
