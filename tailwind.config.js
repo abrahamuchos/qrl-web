@@ -29,6 +29,7 @@ export default {
         'Dark-gray': '#D4D7DE',
         'Light-gray': '#F0F4F7',
         'Regular-gray': '#667080',
+        'Dark-Violet': '#100D2C',
       },
       fontFamily: {
         'Inter': ['Inter', 'sans-serif']
