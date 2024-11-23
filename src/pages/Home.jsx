@@ -107,21 +107,21 @@ export default function Home() {
           {/* Percentages Desktop */}
           <div className="max-lg:hidden absolute flex justify-between w-[90%] top-[78%]">
             <SingleCard
-              className='w-[190px] h-[160px] md:w-[220px]'
+              className='w-[190px] h-[160px] md:w-[200px] md:h-[200px]'
               content={{
                 title: {text: '8,5%'},
                 paragraph: {text: 'de trabajadores ha sufrido violencia durante su labor'}
               }}
             />
             <SingleCard
-              className='w-[190px] h-[160px] md:w-[220px]'
+              className='w-[190px] h-[160px] md:w-[200px] md:h-[200px]'
               content={{
                 title: {text: '17,9%'},
                 paragraph: {text: 'de trabajadores ha sufrido violencia psicologica durante su labor'}
               }}
             />
             <SingleCard
-              className='w-[190px] h-[160px] md:w-[220px]'
+              className='w-[190px] h-[160px] md:w-[200px] md:h-[200px]'
               content={{
                 title: {text: '14%'},
                 paragraph: {text: 'de caída en la productividad por violencia en el trabajo'}
@@ -132,26 +132,23 @@ export default function Home() {
         </Card>
 
         {/* Percentages Mobile */}
-        <div className='flex flex-col md:flex-row gap-10 mt-5 lg:hidden'>
+        <div className='flex flex-col gap-10 mt-5 md:gap-1 md:flex-row lg:hidden'>
           <SingleCard
-            className='w-[235px] h-[160px] flex flex-col justify-around bg-Light-gray backdrop-blur-sm opacity-80
-              md:w-[220px]'
+            className='max-w-[300px] md:max-w-[255px] flex flex-col justify-around bg-Light-gray backdrop-blur-sm opacity-80'
             content={{
               title: {text: '8,5%', className: 'text-Very-dark-blue'},
               paragraph: {text: 'de trabajadores ha sufrido violencia durante su labor'}
             }}
           />
           <SingleCard
-            className='w-[235px] h-[160px] flex flex-col justify-around bg-Light-gray backdrop-blur-sm opacity-80
-              md:w-[220px]'
+            className='max-w-[300px] md:max-w-[255px] flex flex-col justify-around bg-Light-gray backdrop-blur-sm opacity-80'
             content={{
               title: {text: '17,9%', className: 'text-Very-dark-blue'},
               paragraph: {text: 'ha sufrido violencia psicologica en su vida laboral'}
             }}
           />
           <SingleCard
-            className='w-[235px] h-[160px] flex flex-col justify-around bg-Light-gray backdrop-blur-sm opacity-80
-              md:w-[220px]'
+            className='max-w-[300px] md:max-w-[255px] flex flex-col justify-around bg-Light-gray backdrop-blur-sm opacity-80'
             content={{
               title: {text: '14%', className: 'text-Very-dark-blue'},
               paragraph: {text: 'de caída en la productividad por violencia en el trabajo'}
