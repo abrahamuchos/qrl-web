@@ -1,3 +1,9 @@
+@font-face {
+  font-family: "Inter";
+  src: url("assets/fonts/Inter-VariableFont_opsz,wght.ttf");
+  font-style: normal;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -10,7 +16,7 @@
 }
 
 html,body{
-  /*font-family: 'Arial', serif;*/
+  font-family: 'Inter', serif;
   max-width: 100%;
   overflow-x: hidden;
 }
@@ -20,4 +26,41 @@ html,body{
     max-width: 1440px;
     margin: 0 auto;
   }
+}
+
+@layer utilities{
+  .base{
+    @apply text-lg lg:text-xl;
+  }
+
+  .heading-1-bold{
+    @apply text-3xl font-bold lg:text-5xl;
+  }
+
+  .heading-2-semi{
+    @apply text-2xl font-semibold xl:text-3xl;
+  }
+  .heading-2-bold{
+    @apply text-2xl font-bold xl:text-3xl;
+  }
+
+  .heading-3{
+    @apply text-xl lg:text-2xl;
+  }
+  .heading-3-bold{
+    @apply text-xl font-bold lg:text-2xl;
+  }
+
+  .btn-primary{
+    @apply rounded-xl border-[#100D2C] border-solid border-2 px-6 py-3  text-base lg:px-7 lg:py-4
+  }
+  .btn-secondary{
+    @apply rounded-xl border-white border-solid border-2 px-6 py-3  text-base text-white lg:px-7 lg:py-4
+  }
+
+  .btn-tertiary{
+    @apply rounded-xl bg-white border-white border-solid border-2 px-6 py-3  text-base text-Regular-gray lg:px-7 lg:py-4
+  }
+
+
 }
