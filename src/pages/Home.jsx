@@ -284,7 +284,7 @@ export default function Home() {
       {/* End Other services (Manejo de crisis y estrategias de compensación)*/}
 
       {/*CTS*/}
-      <div className="w-full bg-Light-gray">
+      <div className="w-full bg-Light-gray pb-40">
         <div className="max-container flex justify-center items-center p-10">
           <Card
             variant='fourth'
@@ -306,7 +306,6 @@ export default function Home() {
               <a href="" className='btn-tertiary'>Próximamente</a>
             </div>
           </Card>
-
         </div>
       </div>
       {/*End CTS*/}
