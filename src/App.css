@@ -47,6 +47,9 @@ html,body{
   .heading-3{
     @apply text-xl lg:text-2xl;
   }
+  .heading-3-semi{
+    @apply text-xl font-semibold lg:text-2xl;
+  }
   .heading-3-bold{
     @apply text-xl font-bold lg:text-2xl;
   }
