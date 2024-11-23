@@ -1,7 +1,7 @@
 import Lottie from "lottie-react";
 
-import vectorHeroWhite from "../assets/img/svg/vector-short-white.svg";
-import vectorHeroLightBlue from "../assets/img/svg/vector-short-light-blue.svg";
+// import vectorHeroWhite from "../assets/img/svg/vector-short-white.svg";
+// import vectorHeroLightBlue from "../assets/img/svg/vector-short-light-blue.svg";
 
 
 /**
@@ -15,7 +15,7 @@ import vectorHeroLightBlue from "../assets/img/svg/vector-short-light-blue.svg";
  * @constructor
  */
 export default function Hero({animation, loop = false, title, subTitle, vector = 'white'}) {
-  const heroVector =  vector === 'light-blue' ? vectorHeroLightBlue : vectorHeroWhite;
+  // const heroVector =  vector === 'light-blue' ? vectorHeroLightBlue : vectorHeroWhite;
 
   return (
     <div className="h-[90vh] relative lg:h-[100vh]">
@@ -34,7 +34,7 @@ export default function Hero({animation, loop = false, title, subTitle, vector =
         {/*Content*/}
         <div className="absolute top-[33%] left-[10%] w-full
           md:w-[85%] md:left-[7%]
-          lg:left-[10%]
+          lg:left-[10%] lg:top-[43%]
           xl:left-[12%]"
         >
           <div className="2xl:max-container">
