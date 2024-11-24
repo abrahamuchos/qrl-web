@@ -21,10 +21,12 @@ export default {
         '5xl': ['42px', '1.4'],
       },
       colors: {
+        'Other-Very-dark-blue': '#11263D',
         'Very-dark-blue': '#0E253F',
         'Dark-blue': '#092F51',
         'Intermediate-blue': '#254D70',
         'Blue': '#34658A',
+        'Medium-blue': '#1370C4',
         'Light-blue': '#4990B8',
         'Dark-gray': '#D4D7DE',
         'Light-gray': '#F0F4F7',
