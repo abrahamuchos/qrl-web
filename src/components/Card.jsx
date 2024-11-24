@@ -11,8 +11,9 @@ export default function Card({stroke, className, children, variant = 'primary'})
   let style;
 
   if (variant === 'secondary') {
+    //White with strokes
     style = {
-      backgroundImage: `url(${stroke}), linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5))`,
+      backgroundImage: `url(${stroke}), linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1))`,
       backgroundSize: 'cover',
       backgroundRepeat: 'no-repeat',
       backgroundPosition: 'center',
@@ -21,12 +22,14 @@ export default function Card({stroke, className, children, variant = 'primary'})
     style = {
       backgroundColor: 'white'
     }
+
   } else if (variant === 'fourth') {
     style = {
       backgroundColor: '#092F51' // Very Dark Blue
     }
 
   } else {
+    //Blue with stroke
     style = {
       backgroundImage: `url(${stroke}), linear-gradient(97.375deg, #092F51 24%, #4990B8 97%)`,
       backgroundSize: 'cover',

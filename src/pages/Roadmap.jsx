@@ -1,15 +1,28 @@
 import Hero from "../components/Hero.jsx";
+import Card from "../components/Card.jsx";
+import Cta from "../components/Cta.jsx";
 
 import trazoHome from "@animations/trazos-home-2.json";
 import plans1 from '../assets/img/plans-1.png'
+import plans2 from '../assets/img/plans-2.png'
+import plans3 from '../assets/img/plans-3.png'
+import rocketImg from '../assets/img/rocket.png'
+import puzzle from '../assets/img/puzzle-2-desktop.png'
+import stroke from '../assets/img/stoke-6.png';
+
 
 export default function Roadmap() {
-  const roadMapBg = {
-    backgroundImage: 'url(' + plans1 + ')',
-    // backgroundSize: '50% auto',
-    // backgroundPosition: 'right center',
-    // backgroundRepeat: 'no-repeat',
-  }
+  const roadmapBgs = [
+    {
+      backgroundImage: 'url(' + plans1 + ')',
+    },
+    {
+      backgroundImage: 'url(' + plans2 + ')',
+    },
+    {
+      backgroundImage: 'url(' + plans3 + ')',
+    }
+  ]
 
   return (
     <section className="w-full">
@@ -19,11 +32,12 @@ export default function Roadmap() {
         subTitle="Soluciones ajustadas a tu medida y a tu visión"
       />
 
+      {/*Roadmap Premium*/}
       <div id='premium' className="w-full bg-Light-gray">
         <div className="max-container py-10 px-7 bg-cover bg-no-repeat bg-center
           md:py-14 md:px-10
           lg:h-[600px] lg:py-24 lg:px-20 lg:bg-[size:auto_100%] lg:bg-[position:right_center] lg:bg-no-repeat"
-          style={roadMapBg}
+             style={roadmapBgs[0]}
         >
           <div>
             <h2 className='heading-1-bold text-Dark-blue mb-5'>¡Ignición!</h2>
@@ -47,12 +61,119 @@ export default function Roadmap() {
         </div>
       </div>
 
+      {/* Rocket section (Ticket Individual)*/}
+      <div className="w-full bg-white">
+        <div className="max-container h-auto py-10 px-7 bg-cover bg-no-repeat bg-center flex flex-col
+          md:py-14 md:px-10 md:flex-row
+          lg:py-10 lg:px-20 lg:bg-[size:auto_100%] lg:bg-[position:left_center] lg:bg-no-repeat
+          xl:h-[1150px]"
+             style={roadmapBgs[1]}
+        >
+          <div className='w-full order-2 flex justify-center md:order-1 md:w-1/3 lg:w-1/3'>
+            <img src={rocketImg} alt="rocket-image" className='w-[220px] md:w-full'/>
+          </div>
 
-      <div className="w-full h-[900px] bg-green-100">
+          <div className="w-full flex flex-col justify-center order-1 md:order-2 md:w-2/3 lg:w-2/3">
+            <h2 className='heading-1-bold text-Dark-blue mb-10 xl:mb-20'>
+              Ticket: Individual, ¿Comenzamos?
+            </h2>
+            <p className='text-base font-semibold text-Regular-gray mb-7 !leading-9 w-full md:heading-3-semi xl:mb-10'>
+              Tu <span className="text-Dark-blue">viaje hacia la excelencia </span> inicia con un diagnóstico preciso de
+              tu situación actual.
+            </p>
+            <p className='text-base font-semibold text-Regular-gray mb-7 !leading-9 w-full md:heading-3-semi xl:mb-10'>
+              Al igual que un astronauta traza su ruta hacia un nuevo planeta,
+              <span className="text-Dark-blue"> Roadmap Premium </span> te ayudará a <span
+              className="text-Dark-blue"> planificar </span>
+              las escalas necesarias para optimizar tu <span className="text-Dark-blue">tiempo </span>, proyectar tu
+              <span className="text-Dark-blue">crecimiento</span> y ampliar tu visión del <span
+              className="text-Dark-blue">mercado laboral</span>.
+            </p>
+            <p className='text-base font-semibold text-Regular-gray mb-7 !leading-9 w-full md:heading-3-semi xl:mb-10'>
+              Cada parada en este recorrido te brindará <span className="text-Dark-blue"> herramientas y conocimientos clave </span>
+              , incluyendo asesoría especializada para destacar en tus entrevistas de trabajo y asegurar un aterrizaje
+              exitoso en tu <span className="text-Dark-blue"> destino profesional</span>.
+            </p>
+          </div>
 
+        </div>
+      </div>
+      {/* Rocket section (Ticket Individual)*/}
+      {/*End Roadmap Premium*/}
+
+      {/* Corporate Roadmap*/}
+      <div id='corporate' className="w-full bg-Light-gray">
+        <div className="max-container py-10 px-7 bg-cover bg-no-repeat bg-center
+          md:py-14 md:px-10
+          lg:h-[600px] lg:py-24 lg:px-20 lg:bg-[size:auto_100%] lg:bg-[position:right_center] lg:bg-no-repeat"
+             style={roadmapBgs[2]}
+        >
+          <div>
+            <h2 className='heading-1-bold text-Dark-blue mb-5'>Más tripulación, más destinos</h2>
+            <h2 className='heading-1-bold text-Dark-blue mb-7'>Tu equipo, tu destino, tu nave</h2>
+            <p className='text-base font-semibold text-Regular-gray !leading-9 w-full md:heading-3-semi lg:w-[85%]'>
+              <span className="text-Dark-blue"></span>
+              ¡Embarca en un <span className="text-Dark-blue">viaje hacia la excelencia</span> con nuestro
+              <span className="text-Dark-blue">Corporate Roadmap! </span> Diseñamos un <span className="text-Dark-blue"> plan de carrera
+              personalizado </span> <span className="text-Dark-blue"> que transformará tu organización </span> en un
+              destino irresistible para el talento. <span
+              className="text-Dark-blue"> Atrae, desarrolla y retiene </span> a los mejores profesionales, impulsando la
+              innovación y el crecimiento. Es como
+              tener una hoja de ruta estelar que te guiará hacia el <span className="text-Dark-blue">futuro, optimizando costos </span>
+              y consolidando tu <span className="text-Dark-blue">marca empleadora</span>.
+            </p>
+          </div>
+        </div>
       </div>
 
+      <div className="w-full bg-Very-dark-blue">
+        <div className="max-container bg-cover bg-no-repeat bg-center flex justify-center items-center px-5 py-20
+          sm:bg-[size:auto_100%] sm:bg-[position:left_center] sm:bg-no-repeat
+          lg:pt-20 lg:pb-40 lg:bg-[size:auto_100%] lg:bg-[position:left_center] lg:bg-no-repeat"
+             style={{backgroundImage: `url(${puzzle})`}}
+        >
+          <Card
+            stroke={stroke}
+            variant='secondary'
+            className='w-[100%]
+                sm:w-[550px] sm:px-9 sm:py-8
+                md:w-[85%] md:px-10 md:py-8
+                lg:w-[900px] lg:px-10 lg:pb-10 lg:pt-16
+                xl:w-[1000px]'
+          >
+            <h2 className="heading-1-bold text-Dark-blue mb-5 md:mb-10">
+              El viaje comienza, con un diagnóstico
+            </h2>
 
+            <p className='text-base font-semibold text-Dark-blue !leading-9 md:heading-3-semi mb-5'>
+              Iniciamos con un análisis detallado de tu tripulación, identificando a los talentos y cargos que son
+              esenciales para el éxito de tu misión. A continuación, diseñamos una trayectoria personalizada, como una
+              hiperruta cósmica, que guiará a tus equipos hacia sus metas profesionales.
+            </p>
+            <p className='text-base font-semibold text-Dark-blue !leading-9 md:heading-3-semi'>
+              Nuestro simulador de carrera te permitirá visualizar el futuro de tu organización y validar cada paso del
+              camino con nuestro equipo de expertos. ¡Prepárate para despegar hacia nuevas alturas!
+            </p>
+          </Card>
+        </div>
+      </div>
+      {/* End Corporate Roadmap*/}
+
+      {/* CTA*/}
+      <div className="w-full bg-Dark-blue">
+        <div className="max-container h-[620px] sm:h-[500px] lg:h-[550px] flex justify-center items-center px-5">
+          <Cta
+            className='!bg-Other-Very-dark-blue'
+            content={{
+              title: {text: 'Ok QRL, estamos listos para el despegue'},
+              subtitle: {text: 'Contáctanos y conversemos para dar inicio a este viaje intergalactico'}
+            }}
+            button={{text: 'Contáctanos', href: '/contactanos'}}
+          />
+        </div>
+      </div>
+      {/* End CTA*/}
+      <div className="w-full h-[90px] md:h-[100px] bg-Dark-blue"></div>
     </section>
   );
 }
