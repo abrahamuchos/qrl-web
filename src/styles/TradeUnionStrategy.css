@@ -1,6 +1,7 @@
 .bg-stroke{
   background-image: url("/src/assets/img/stroke-7.png"), linear-gradient(102.967deg, #092F51 40%, #4990B8 100%);;
   background-repeat: no-repeat;
-  background-position: 100% 0%;
+  background-position: 100% 0;
+  background-size: cover;
 
 }

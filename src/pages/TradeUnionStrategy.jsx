@@ -133,7 +133,7 @@ export default function TradeUnionStrategy() {
               }}
             />
 
-            <div className="mt-10">
+            <div className="mt-10 basis-full text-center">
               <p className='text-base text-white'>Fuente: Organización Internacional del Trabajo (OIT)</p>
             </div>
           </div>
