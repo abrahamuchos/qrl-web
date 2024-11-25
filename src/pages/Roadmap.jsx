@@ -142,7 +142,7 @@ export default function Roadmap() {
             <p className='text-base font-semibold text-Dark-blue !leading-10 md:heading-3-semi mb-5'>
               Nuestro <span className="text-Medium-blue"> simulador de carrera</span> te permitirá visualizar el
               <span className="text-Medium-blue"> futuro de tu organización</span> y validar cada paso del
-              camino con nuestro equipo de expertos. 
+              camino con nuestro equipo de expertos.
               <span className="text-Medium-blue"> ¡Prepárate para despegar hacia nuevas alturas!</span>
             </p>
 
