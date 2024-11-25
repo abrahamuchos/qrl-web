@@ -1,0 +1,29 @@
+.bg-plan1{
+  background-image: url('/src/assets/img/plans-1-mobile.png');
+}
+
+.bg-plan2{
+  background-image: url('/src/assets/img/plans-2-mobile.png')
+}
+
+.bg-plan3{
+  background-image: url('/src/assets/img/plans-3-mobile.png')
+}
+
+
+
+/*** Media queries ***/
+/* Desktop (lg)*/
+@media only screen and (min-width: 1024px) {
+  .bg-plan1{
+    background-image: url('/src/assets/img/plans-1.png');
+  }
+
+  .bg-plan2{
+    background-image: url('/src/assets/img/plans-2.png');
+  }
+
+  .bg-plan3{
+    background-image: url('/src/assets/img/plans-3.png');
+  }
+}
