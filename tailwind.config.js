@@ -28,9 +28,11 @@ export default {
         'Blue': '#34658A',
         'Medium-blue': '#1370C4',
         'Light-blue': '#4990B8',
+        'Very-dark-gray': '#55575B',
         'Dark-gray': '#D4D7DE',
         'Light-gray': '#F0F4F7',
         'Regular-gray': '#667080',
+        'Other-gray': '#CED7E6',
         'Dark-Violet': '#100D2C',
       },
       fontFamily: {
