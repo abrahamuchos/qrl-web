@@ -1,8 +1,11 @@
 import Hero from "../components/Hero.jsx";
 import Card from "../components/Card.jsx";
 
+import '../styles/TradeUnionStrategy.css';
 import trazoHome from "@animations/trazos-home-2.json";
 import puzzle from '../assets/img/puzzles-2.png';
+import SingleCard from "../components/SingleCard.jsx";
+
 
 export default function TradeUnionStrategy() {
 
@@ -41,7 +44,7 @@ export default function TradeUnionStrategy() {
       </div>
 
       {/*Process*/}
-      <div className="w-full bg-Light-gray">
+      <div className="w-full bg-Light-gray mb-0">
         <div className="max-container flex flex-col justify-center items-center py-10 px-7 gap-5
           sm:gap-8
           md:flex-row md:flex-wrap md:items-stretch md:gap-5 md:py-10
@@ -58,14 +61,16 @@ export default function TradeUnionStrategy() {
           <Card className='w-[300px] sm:w-[350px] md:flex-2 lg:flex-1 lg:!px-16 xl:!pb-20'>
             <h2 className='heading-1-bold text-white mb-5 lg:mb-10'>Estrategia <br/>personalizada</h2>
             <p className='text-base text-Other-gray font-semibold md:heading-2-semi !leading-10'>
-              Diseñamos un plan a la medida para <span className="text-white"> prevenir conflictos </span>y fomentar la colaboración.
+              Diseñamos un plan a la medida para <span className="text-white"> prevenir conflictos </span>y fomentar la
+              colaboración.
             </p>
           </Card>
 
           <Card className='w-[300px] sm:w-[350px] md:w-10/12 lg:mx-10 xl:mx-16 lg:!px-16'>
             <h2 className='heading-1-bold text-white mb-5 lg:mb-10'>Resultados tangibles</h2>
             <p className='text-base text-Other-gray font-semibold !leading-10 md:heading-2-semi md:pr-20 xl:pr-40'>
-              Con años de experiencia, te damos acceso a <span className="text-white"> modelos exitosos</span> que conducen
+              Con años de experiencia, te damos acceso a <span className="text-white"> modelos exitosos</span> que
+              conducen
               a la <span className="text-white"> paz laboral</span> y maximizan el rendimiento.
             </p>
           </Card>
@@ -82,7 +87,77 @@ export default function TradeUnionStrategy() {
       </div>
       {/*End Process*/}
 
-      <div className="bg-green-200 h-[700px] w-full"></div>
+      {/* Gobernabilidad y Productivity*/}
+      <div className="w-full bg-stroke">
+        <div className="max-container flex flex-col justify-center items-center">
+
+          {/*Gobernabilidad*/}
+          <div className="pt-20 pb-10 px-7 lg:w-10/12 lg:px-24">
+            <h2 className="heading-1-bold text-white mb-5 md:mb-10">Gobernabilidad. Una alianza para el éxito.</h2>
+            <p className='text-base text-Other-gray font-semibold md:heading-2-semi !leading-10'>
+              La gobernabilidad es la capacidad que tiene la organización de ejercer la dirección, la administración y
+              el control de las actividades que se desarrollan en la instalación. A través de este control, la
+              organización
+              alcanza el normal desenvolvimiento de la continuidad operativa, en un ambiente de confianza y estabilidad,
+              mejorando la reputación de la empresa, potenciando sus productos y servicios.
+            </p>
+          </div>
+          {/*End Gobernabilidad*/}
+
+          {/*Statics*/}
+          <div className="w-full pb-10 px-7 flex flex-col justify-center items-center gap-5
+            md:flex-row md:flex-wrap md:justify-around xl:py-10 xl:px-20"
+          >
+            <SingleCard
+              className='w-[220px] h-[220px] md:w-[200px] md:h-[200px] lg:w-[230px] lg:h-[220px] xl:w-[280px] xl:h-[270px]'
+              content={{
+                title: {text: '8,5%'},
+                paragraph: {text: 'de trabajadores ha sufrido violencia durante su labor', className: 'lg:font-bold'}
+              }}
+            />
+            <SingleCard
+              className='w-[220px] h-[220px] md:w-[200px] md:h-[200px] lg:w-[230px] lg:h-[220px] xl:w-[280px] xl:h-[270px]'
+              content={{
+                title: {text: '17,9%'},
+                paragraph: {
+                  text: 'de trabajadores ha sufrido violencia psicologica durante su labor',
+                  className: 'lg:font-bold'
+                }
+              }}
+            />
+            <SingleCard
+              className='w-[220px] h-[220px] md:w-[200px] md:h-[200px] lg:w-[230px] lg:h-[220px] xl:w-[280px] xl:h-[270px] '
+              content={{
+                title: {text: '14%'},
+                paragraph: {text: 'de caída en la productividad por violencia en el trabajo', className: 'lg:font-bold'}
+              }}
+            />
+
+            <div className="mt-10">
+              <p className='text-base text-white'>Fuente: Organización Internacional del Trabajo (OIT)</p>
+            </div>
+          </div>
+          {/*End Statics*/}
+
+          {/*Productivity*/}
+          <div className="pb-20 px-7 lg:w-10/12 lg:px-24">
+            <h2 className="heading-1-bold text-white mb-5 md:mb-10">Paz laboral. Productividad asegurada.</h2>
+            <p className='text-base text-Other-gray font-semibold md:heading-2-semi !leading-10'>
+              Las empresas más exitosas fomentan relaciones laborales sólidas entre trabajadores, sindicatos y la
+              organización, creando un ambiente laboral sano que se traduce en una mayor eficiencia, menor rotación,
+              menos ausentismo y, en última instancia, un incremento significativo de la productividad.
+            </p>
+          </div>
+          {/*End Productivity*/}
+
+        </div>
+      </div>
+      {/* Gobernabilidad y Productivity*/}
+
+
+      <div className="bg-green-200 w-full h-[500px]"></div>
+
+
     </section>
   );
 }
