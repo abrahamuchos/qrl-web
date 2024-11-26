@@ -3,13 +3,12 @@ import Lottie from "lottie-react";
 // import vectorHeroWhite from "../assets/img/svg/vector-short-white.svg";
 // import vectorHeroLightBlue from "../assets/img/svg/vector-short-light-blue.svg";
 
-
 /**
  *
  * @param {JSON} animation - JSON animation (not dotLottie)
  * @param {boolean} [loop=false]
  * @param {string} title
- * @param {string} subTitle
+ * @param {{desktop: string, mobile: string} | string} subTitle
  * @param {string} [vector='white'] - {'white' | 'light-blue'}
  * @returns {JSX.Element}
  * @constructor
@@ -32,7 +31,7 @@ export default function Hero({animation, loop = false, title, subTitle, vector =
         />
 
         {/*Content*/}
-        <div className="absolute top-[33%] left-[10%] w-full
+        <div className="absolute top-[33%] left-[3%] w-[95%]
           md:w-[85%] md:left-[7%]
           lg:left-[10%] lg:top-[43%]
           xl:left-[12%]"
@@ -44,12 +43,28 @@ export default function Hero({animation, loop = false, title, subTitle, vector =
             >
               {title}
             </h1>
-            <h2 className='text-white font-Inter font-bold text-[25px]
-              md:text-[27px]
-              lg:text-[30px]'
-            >
-              {subTitle}
-            </h2>
+
+            {/*Sub title (Mobile and desktop)*/}
+            {(typeof subTitle === 'object')
+              ? <>
+                <h2 className='text-white font-Inter font-bold text-[25px] md:hidden'>
+                  {subTitle.mobile}
+                </h2>
+                <h2 className='text-white font-Inter font-bold max-md:hidden md:text-[27px] lg:text-[30px]'>
+                  {subTitle.mobile}
+                </h2>
+              </>
+
+              : <h2 className='text-white font-Inter font-bold text-[25px]
+                    md:text-[27px]
+                    lg:text-[30px]'
+              >
+                {subTitle}
+              </h2>
+
+            }
+            {/*End Sub title (Mobile and desktop)*/}
+
           </div>
         </div>
         {/* End Content*/}

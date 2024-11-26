@@ -18,7 +18,12 @@ export default function TradeUnionStrategy() {
       <Hero
         animation={trazoHome}
         title="Anticipa conflictos, construye relaciones sostenibles"
-        subTitle="Diseñamos estrategias sindicales a tu medida para reducir costos,mejorar la productividad y las relaciones laborales."
+        subTitle={
+          {
+            mobile: "Diseñamos estrategias sindicales a tu medida ",
+            desktop: "Diseñamos estrategias sindicales a tu medida "
+          }
+        }
       />
 
       {/* Alliance (De la tensión a la alianza)*/}
