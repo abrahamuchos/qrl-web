@@ -3,7 +3,7 @@
  * @param {string|undefined} stroke
  * @param {string|undefined} className
  * @param {JSX.Element|undefined} children
- * @param {('primary'|'secondary'|'tertiary'|'fourth')} [variant='primary']
+ * @param {('primary'|'secondary'|'tertiary'|'fourth'| 'sixth')} [variant='primary']
  * @returns {JSX.Element}
  * @constructor
  */
@@ -26,6 +26,11 @@ export default function Card({stroke, className, children, variant = 'primary'})
   } else if (variant === 'fourth') {
     style = {
       backgroundColor: '#092F51' // Very Dark Blue
+    }
+
+  } else if (variant === 'sixth') {
+    style = {
+      backgroundColor: '#F0F4F7' // Light Dark Blue
     }
 
   } else {
