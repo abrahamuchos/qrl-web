@@ -44,7 +44,7 @@ export default function CrisisManagement() {
 
       {/* What would you do (Que harías si)*/}
       <div className="bg-Light-gray w-full">
-        <div className="max-container max-container py-10 px-7 flex flex-col justify-center items-center
+        <div className="max-container py-10 px-7 flex flex-col justify-center items-center
             md:py-14 md:px-10
             lg:py-24 lg:px-20"
         >

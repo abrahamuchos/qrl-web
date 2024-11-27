@@ -1,0 +1,33 @@
+.bg-puzzle{
+  background-image: url('/src/assets/img/puzzle-bg-left-top.png'),  url("/src/assets/img/puzzle-gb-right-center.png"), url('/src/assets/img/puzzle-bg-left-top.png');
+  background-position: -25% -10%, 147% 55%, -25% 100%;
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-color: #F0F4F7;
+}
+
+/*** Media Queries ***/
+
+/*MD*/
+@media only screen and (min-width: 768px) {
+  .bg-puzzle{
+    background-position: -11% -26%, 128% 54%, -11% 100%;
+    background-size: 35%;
+  }
+}
+
+/* LG*/
+@media only screen and (min-width: 1024px) {
+  .bg-puzzle{
+    background-position: -4% -15%, 117% 50%, -5% 106%;
+    background-size: 25%;
+  }
+}
+
+/* XL */
+@media only screen and (min-width: 1280px) {
+  .bg-puzzle{
+    background-position: left -15%, right 37%, -5% 106%;
+    background-size: 290px;
+  }
+}
