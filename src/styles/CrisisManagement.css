@@ -1,0 +1,10 @@
+.bg-stroke{
+  background-image: url("/src/assets/img/stroke-13.png"), linear-gradient(102.188deg, #092F51 27%, #255A7E 59%, #4990B8 82%);
+  background-repeat: no-repeat;
+  background-position: 100% 0;
+  background-size: cover;
+}
+
+.bg-headband{
+  background: rgba(10, 48, 82, 60%);
+}

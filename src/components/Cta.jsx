@@ -23,7 +23,7 @@ export default function Cta({className,content, button}) {
           {content.title.text}
         </h2>
 
-        <p className={`heading-1-bold text-white text-center mb-14 ${content.subtitle?.className}`}>
+        <p className={`heading-2-bold text-white text-center mb-14 ${content.subtitle?.className}`}>
           {content.subtitle.text}
         </p>
 
