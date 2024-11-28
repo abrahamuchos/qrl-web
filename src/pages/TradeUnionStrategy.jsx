@@ -9,6 +9,7 @@ import puzzle from '../assets/img/puzzles-2.png';
 import stroke from '../assets/img/stroke-8.png';
 import stroke2 from '../assets/img/stroke-9.png';
 import handshake from '../assets/img/handshake-executives.png';
+import trazoHome from "@animations/trazos-home-2.json";
 
 
 export default function TradeUnionStrategy() {
@@ -16,7 +17,7 @@ export default function TradeUnionStrategy() {
   return (
     <section className='w-full'>
       <Hero
-        animation={strokeTradeUnion}
+        animation={trazoHome}
         title="Anticipa conflictos, construye relaciones sostenibles"
         subTitle={
           {
