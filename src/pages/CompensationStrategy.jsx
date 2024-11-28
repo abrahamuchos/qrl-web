@@ -167,7 +167,7 @@ export default function CompensationStrategy() {
           <Cta
             className='!bg-Other-Very-dark-blue'
             content={{
-              title: {text: 'Conozca como nuestras estrategias de compensación pueden transformar tu empresa'},
+              title: {text: 'Conozca cómo nuestras estrategias de compensación pueden transformar tu empresa'},
               subtitle: {text: 'Contáctanos y conversemos'}
             }}
             button={{text: 'Contáctanos', href: '/contactanos'}}
