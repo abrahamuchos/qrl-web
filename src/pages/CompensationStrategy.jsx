@@ -136,13 +136,12 @@ export default function CompensationStrategy() {
             </div>
 
             <div className='mt-5'>
-              <p className='text-base text-Other-gray font-semibold md:heading-3-semi !leading-10'>
-                Optar por <span className="text-white">beneficios no monetarios</span>, como programas de desarrollo
-                profesional, horarios flexibles o reconocimiento público, puede incrementar la satisfacción de los empleados
-                <span className="text-white"> sin generar un impacto sustancial en el presupuesto.</span>
+              <p className='text-base text-Other-gray font-semibold md:heading-3-semi !leading-10 mb-4'>
+                Optar por <span className="text-white">beneficios no monetarios</span>, puede incrementar la satisfacción
+                de los empleados <span className="text-white"> sin generar un impacto sustancial en el presupuesto.</span>
               </p>
               <p className='text-base text-Other-gray font-semibold md:heading-3-semi !leading-10'>
-                Además, al <span className="text-white"> alinear las compensaciones con los objetivos estratégicos </span>
+                Además, al <span className="text-white"> alinear la compensación con los objetivos estratégicos </span>
                 de la organización, se garantiza que cada inversión en talento contribuya al
                 <span className="text-white"> logro de los resultados deseados</span>
               </p>
