@@ -1,4 +1,4 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from "react-router-dom";
 
 import './App.css'
 
@@ -14,58 +14,27 @@ import NotFound from "./pages/NotFound.jsx";
 import TermsConditions from "./pages/TermsConditions.jsx";
 import BaseLayout from "./layouts/BaseLayout.jsx";
 
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route path="/" element={<BaseLayout/>}>
+      <Route index element={<Home />}/>
+      <Route path='/sobre-nosotros' element={<AboutUs />}/>
+      <Route path='/contactanos' element={<ContactUs />}/>
+      <Route path='/manejo-crisis' element={<CrisisManagement />}/>
+      <Route path='/estrategia-compensacion' element={<CompensationStrategy />}/>
+      <Route path='/cts' element={<Cts />}/>
+      <Route path='/roadmap' element={<Roadmap />}/>
+      <Route path='/estrategia-sindical' element={<TradeUnionStrategy />}/>
+      <Route path='/terminos-condiciones' element={<TermsConditions />}/>
+      <Route path='*' element={<NotFound />}/>
+    </Route>
+  )
+);
+
 function App() {
 
-  const router = createBrowserRouter(
-    [
-      {
-        path: "/",
-        element: <Home />,
-      },
-      {
-        path: "/sobre-nosotros",
-        element: <AboutUs />,
-      },
-      {
-        path: "/contactanos",
-        element: <ContactUs />,
-      },
-      {
-        path: "/manejo-crisis",
-        element: <CrisisManagement />,
-      },
-      {
-        path: "/estrategia-compensacion",
-        element: <CompensationStrategy />,
-      },
-      {
-        path: "/cts",
-        element: <Cts />,
-      },
-      {
-        path: "/roadmap",
-        element: <Roadmap />,
-      },
-      {
-        path: "/estrategia-sindical",
-        element: <TradeUnionStrategy />,
-      },
-      {
-        path: "/terms-conditions",
-        element: <TermsConditions />,
-      },
-      {
-        path: "*",
-        element: <NotFound />,
-      },
-    ]
-  );
-
-
   return (
-    <BaseLayout>
-      <RouterProvider router={router}/>
-    </BaseLayout>
+    <RouterProvider router={router}/>
   )
 }
 
