@@ -1,5 +1,6 @@
 import Hero from "../components/Hero.jsx";
 import Card from "../components/Card.jsx";
+import Cta from "../components/Cta.jsx";
 
 import '../styles/CrisisManagement.css';
 import strokeCrisisManagement from "@animations/crisis-management.json";
@@ -7,7 +8,6 @@ import handBlock from '../assets/img/view-block-hand.png';
 import stroke from "../assets/img/stroke-12.png";
 import dardos from "../assets/img/dardos.png";
 import chess from "../assets/img/chess.png";
-import Cta from "../components/Cta.jsx";
 
 export default function CrisisManagement() {
 
@@ -97,8 +97,6 @@ export default function CrisisManagement() {
               adaptando su organización a las demandas cambiantes del mercado.
             </p>
           </div>
-
-
         </div>
         {/*End Adaptarse y prosperar*/}
 
