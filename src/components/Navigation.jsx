@@ -2,6 +2,8 @@ import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 
 import logo from '../assets/img/svg/qrl-logo.svg';
+import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 export default function Navigation() {
 
@@ -68,9 +70,9 @@ export default function Navigation() {
 
         {/*Desktop Menu */}
         <div className="hidden space-x-6 w-3/5 lg:flex lg:justify-between lg:items-center">
-          <a href="/sobre-nosotros" className='hover:opacity-50 text-base text-white font-semibold tracking-[5%]'>
+          <Link to="/sobre-nosotros" className='hover:opacity-50 text-base text-white font-semibold tracking-[5%]'>
             Quienes
-          </a>
+          </Link>
 
           {/*Dropdown Menu */}
           <div className="relative">
@@ -95,51 +97,51 @@ export default function Navigation() {
               >
                 <div className="grid grid-cols-4 gap-4 py-6 px-8">
                   <div className="space-y-3">
-                    <a href="/roadmap"
+                    <HashLink to="/roadmap"
                        className="block text-Very-dark-blue text-base font-bold ">
                       Roadmap
-                    </a>
-                    <a href="/roadmap#premium"
+                    </HashLink>
+                    <HashLink to="/roadmap#premium"
                        className="block text-Very-dark-blue text-base">
                       Roadmap Premium
-                    </a>
-                    <a href="/roadmap#corporate"
+                    </HashLink>
+                    <HashLink to="/roadmap#corporate"
                        className="block text-Very-dark-blue text-base">
                       Corporate Roadmap
-                    </a>
+                    </HashLink>
                   </div>
 
                   <div className="space-y-3">
-                    <a href="/estrategia-sindical"
+                    <HashLink to="/estrategia-sindical"
                        className="block text-Very-dark-blue text-base font-bold ">
                       Estrategia Sindical
-                    </a>
-                    <a href="/estrategia-sindical#negociacion-colectiva"
+                    </HashLink>
+                    <HashLink to="/estrategia-sindical#negociacion-colectiva"
                        className="block text-Very-dark-blue text-base">
                       Negociación colectiva
-                    </a>
-                    <a href="/estrategia-sindical#manejo-conflictos"
+                    </HashLink>
+                    <HashLink to="/estrategia-sindical#manejo-conflictos"
                        className="block text-Very-dark-blue text-base">
                       Manejo de conflictos
-                    </a>
+                    </HashLink>
                   </div>
 
                   <div className="space-y-3">
-                    <a href="/manejo-crisis"
+                    <Link to="/manejo-crisis"
                        className="block text-Very-dark-blue text-base font-bold ">
                       Manejo de Crisis
-                    </a>
-                    <a href="/manejo-crisis#downsizing"
+                    </Link>
+                    <HashLink smooth to="/manejo-crisis#downsizing"
                        className="block text-Very-dark-blue text-base">
                       Downsizing
-                    </a>
+                    </HashLink>
                   </div>
 
                   <div className="space-y-3">
-                    <a href="/estrategia-compensacion"
+                    <Link to="/estrategia-compensacion"
                        className="block text-Very-dark-blue text-base font-bold ">
                       Estrategia de compensación
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -148,12 +150,12 @@ export default function Navigation() {
           </div>
           {/*End Dropdown Menu */}
 
-          <a href="/contactanos" className='hover:opacity-50 text-base text-white font-semibold tracking-[5%]'>
+          <Link to="/contactanos" className='hover:opacity-50 text-base text-white font-semibold tracking-[5%]'>
             Lidera y trasciende
-          </a>
-          <a href="/contactanos" className='hover:opacity-50 text-base text-white font-semibold tracking-[5%]'>
+          </Link>
+          <Link to="/contactanos" className='hover:opacity-50 text-base text-white font-semibold tracking-[5%]'>
             Contacto
-          </a>
+          </Link>
         </div>
         {/*End Desktop Menu */}
 
@@ -173,9 +175,9 @@ export default function Navigation() {
           lg:hidden`
         }
       >
-        <a href="/sobre-nosotros" className='block p-5 text-lg text-white font-semibold  tracking-tighter'>
+        <Link to="/sobre-nosotros" className='block p-5 text-lg text-white font-semibold  tracking-tighter'>
           Quienes
-        </a>
+        </Link>
 
         {/* Dropdown menu*/}
         <div className="relative">
@@ -201,44 +203,44 @@ export default function Navigation() {
           >
             <div className="pl-6">
               <div className='mb-3'>
-                <a href="/roadmap"
+                <Link to="/roadmap"
                    className="block py-1 px-4 text-Very-dark-blue text-base font-bold ">
                   Roadmap
-                </a>
-                <a href="/roadmap#premium"
+                </Link>
+                <HashLink href="/roadmap#premium"
                    className="block py-3 px-6 text-Very-dark-blue text-base">
                   Roadmap Premium
-                </a>
-                <a href="/roadmap#corporate"
+                </HashLink>
+                <HashLink href="/roadmap#corporate"
                    className="block py-3 px-6 text-Very-dark-blue text-base">
                   Corporate Roadmap
-                </a>
+                </HashLink>
               </div>
 
               <div className='mb-3'>
-                <a href="/estrategia-sindical"
+                <Link to="/estrategia-sindical"
                    className="block py-1 px-4 text-Very-dark-blue text-base font-bold ">
                   Estrategia Sindical
-                </a>
-                <a href="/estrategia-sindical#negociacion-colectiva"
+                </Link>
+                <HashLink to="/estrategia-sindical#negociacion-colectiva"
                    className="block py-3 px-6 text-Very-dark-blue text-base">
                   Negociación colectiva
-                </a>
-                <a href="/estrategia-sindical#manejo-conflictos"
+                </HashLink>
+                <HashLink to="/estrategia-sindical#manejo-conflictos"
                    className="block py-3 px-6 text-Very-dark-blue text-base">
                   Manejo de conflictos
-                </a>
+                </HashLink>
               </div>
 
               <div className='mb-3'>
-                <a href="/manejo-crisis"
+                <Link to="/manejo-crisis"
                    className="block py-1 px-4 text-Very-dark-blue text-base font-bold ">
                   Manejo de Crisis
-                </a>
-                <a href="/manejo-crisis#downsizing"
+                </Link>
+                <HashLink to="/manejo-crisis#downsizing"
                    className="block py-3 px-6 text-Very-dark-blue text-base">
                   Downsizing
-                </a>
+                </HashLink>
               </div>
 
               <div className='mb-3'>
