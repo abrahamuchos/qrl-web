@@ -12,7 +12,7 @@ import personBusiness from '../assets/img/business-people.png'
 export default function CompensationStrategy() {
 
   return (
-    <section className='w-full'>
+    <section id='compensation-strategy' className='w-full'>
       <Hero
         animation={strokeCompensationStrategy}
         title="Anticipa conflictos, construye relaciones sostenibles"

@@ -140,7 +140,6 @@ export default function CrisisManagement() {
       </div>
       {/*End Downsizing Info*/}
 
-
       {/* CTA*/}
       <div className="w-full bg-Dark-blue">
         <div className="max-container h-[620px] sm:h-[500px] lg:h-[550px] flex justify-center items-center px-5">
@@ -156,7 +155,6 @@ export default function CrisisManagement() {
       </div>
       {/* End CTA*/}
       <div className="w-full h-[90px] md:h-[100px] bg-Dark-blue"></div>
-
     </section>
   );
 }
