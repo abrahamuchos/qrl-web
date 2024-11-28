@@ -67,7 +67,7 @@ export default function Navigation() {
         <img src={logo} alt="qrl-strategy-logo" className='w-[137px]'/>
 
         {/*Desktop Menu */}
-        <div className="hidden space-x-6 w-3/5 lg:flex lg:justify-between">
+        <div className="hidden space-x-6 w-3/5 lg:flex lg:justify-between lg:items-center">
           <a href="/sobre-nosotros" className='hover:opacity-50 text-base text-white font-semibold tracking-[5%]'>
             Quienes
           </a>
@@ -148,10 +148,10 @@ export default function Navigation() {
           </div>
           {/*End Dropdown Menu */}
 
-          <a href="/" className='hover:opacity-50 text-base text-white font-semibold tracking-[5%]'>
+          <a href="/contactanos" className='hover:opacity-50 text-base text-white font-semibold tracking-[5%]'>
             Lidera y trasciende
           </a>
-          <a href="/" className='hover:opacity-50 text-base text-white font-semibold tracking-[5%]'>
+          <a href="/contactanos" className='hover:opacity-50 text-base text-white font-semibold tracking-[5%]'>
             Contacto
           </a>
         </div>
@@ -253,10 +253,10 @@ export default function Navigation() {
         </div>
         {/* End Dropdown menu*/}
 
-        <a href="/" className='block p-5 text-lg text-white font-semibold  tracking-tighter'>
+        <a href="/contactanos" className='block p-5 text-lg text-white font-semibold  tracking-tighter'>
           Lidera y trasciende
         </a>
-        <a href="/" className='block p-5 text-lg text-white font-semibold  tracking-tighter'>
+        <a href="/contactanos" className='block p-5 text-lg text-white font-semibold  tracking-tighter'>
           Contacto
         </a>
       </div>
