@@ -1,14 +1,14 @@
 import Hero from "../components/Hero.jsx";
 import Card from "../components/Card.jsx";
+import Cta from "../components/Cta.jsx";
 import SingleCard from "../components/SingleCard.jsx";
 
 import '../styles/TradeUnionStrategy.css';
-import trazoHome from "@animations/trazos-home-2.json";
+import strokeTradeUnion from "@animations/trade-union.json";
 import puzzle from '../assets/img/puzzles-2.png';
 import stroke from '../assets/img/stroke-8.png';
 import stroke2 from '../assets/img/stroke-9.png';
 import handshake from '../assets/img/handshake-executives.png';
-import Cta from "../components/Cta.jsx";
 
 
 export default function TradeUnionStrategy() {
@@ -16,7 +16,7 @@ export default function TradeUnionStrategy() {
   return (
     <section className='w-full'>
       <Hero
-        animation={trazoHome}
+        animation={strokeTradeUnion}
         title="Anticipa conflictos, construye relaciones sostenibles"
         subTitle={
           {

@@ -3,7 +3,7 @@ import Card from "../components/Card.jsx";
 import Cta from "../components/Cta.jsx";
 
 import '../styles/Roadmap.css';
-import trazoHome from "@animations/trazos-home-2.json";
+import strokeRoadmap from "@animations/roadmap.json";
 import rocketImg from '../assets/img/rocket.png'
 import puzzle from '../assets/img/puzzle-2-desktop.png'
 import stroke from '../assets/img/stoke-6.png';
@@ -14,7 +14,7 @@ export default function Roadmap() {
   return (
     <section className="w-full">
       <Hero
-        animation={trazoHome}
+        animation={strokeRoadmap}
         title="¡Prepárate para el despegue!"
         subTitle="Soluciones ajustadas a tu medida y a tu visión"
       />
