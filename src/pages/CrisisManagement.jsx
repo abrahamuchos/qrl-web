@@ -61,9 +61,9 @@ export default function CrisisManagement() {
               Convierte los desafíos en oportunidades de crecimiento
             </h2>
             <p className='text-base text-Other-gray font-semibold !leading-10 md:heading-3-semi md:pr-20 xl:pr-40'>
-              El manejo de crisis es uno de los procesos estratégicos más importante para cualquier
+              El manejo de crisis es uno de los procesos estratégicos más importantes para cualquier
               <span className="text-white"> organización </span> que desee operar de manera
-              <span className="text-white">eficiente y sostenible en el tiempo.</span>
+              <span className="text-white"> eficiente y sostenible en el tiempo.</span>
             </p>
 
           </Card>
@@ -93,7 +93,7 @@ export default function CrisisManagement() {
             <p className='text-base text-Other-gray font-semibold md:heading-3-semi !leading-10'>
               Nuestro servicio de downsizing le ayudará a <span className="text-white">optimizar sus operaciones</span>,
               reduciendo costos y mejorando la <span className="text-white"> eficiencia</span>. Implementamos las
-              <span className="text-white"> mejores prácticas</span> para garantizar una transición suave y exitosa,
+              <span className="text-white"> mejores prácticas</span> para garantizar una transición fluida y exitosa,
               adaptando su organización a las demandas cambiantes del mercado.
             </p>
           </div>
