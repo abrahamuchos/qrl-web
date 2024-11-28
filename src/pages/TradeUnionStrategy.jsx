@@ -258,7 +258,7 @@ export default function TradeUnionStrategy() {
       {/* End Collective bargaining (Negociación colectiva)*/}
 
       {/* Conflict management and resolution (Manejo y resolución de conflictos) */}
-      <div className="bg-[#DFE7ED] w-full">
+      <div id='manejo-conflictos' className="bg-[#DFE7ED] w-full">
         <div className="max-container py-10 pt-20 px-5 flex flex-col justify-center items-center lg:py-20">
           <Card
             variant='sixth'

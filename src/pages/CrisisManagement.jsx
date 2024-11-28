@@ -72,7 +72,7 @@ export default function CrisisManagement() {
       {/*End What would you do (Que harías si)*/}
 
       {/*Downsizing Info*/}
-      <div className="w-full bg-stroke">
+      <div id='downsizing' className="w-full bg-stroke">
         {/*Adaptarse y prosperar*/}
         <div className="max-container py-10 px-7 flex flex-col justify-center items-center
             md:py-14 md:px-10
