@@ -13,6 +13,7 @@ import TradeUnionStrategy from "./pages/TradeUnionStrategy.jsx";
 import NotFound from "./pages/NotFound.jsx";
 import TermsConditions from "./pages/TermsConditions.jsx";
 import BaseLayout from "./layouts/BaseLayout.jsx";
+import PrivacyPolicy from "./pages/PrivacyPolicy.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -26,6 +27,7 @@ const router = createBrowserRouter(
       <Route path='/roadmap' element={<Roadmap />}/>
       <Route path='/estrategia-sindical' element={<TradeUnionStrategy />}/>
       <Route path='/terminos-condiciones' element={<TermsConditions />}/>
+      <Route path='/politica-privacidad' element={<PrivacyPolicy />}/>
       <Route path='*' element={<NotFound />}/>
     </Route>
   )

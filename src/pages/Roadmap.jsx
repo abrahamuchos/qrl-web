@@ -12,7 +12,7 @@ import stroke from '../assets/img/stoke-6.png';
 export default function Roadmap() {
 
   return (
-    <section className="w-full">
+    <section id='roadmap' className="w-full">
       <Hero
         animation={strokeRoadmap}
         title="¡Prepárate para el despegue!"

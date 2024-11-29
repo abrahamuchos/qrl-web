@@ -12,7 +12,7 @@ import chess from "../assets/img/chess.png";
 export default function CrisisManagement() {
 
   return (
-    <section className='w-full'>
+    <section id='manejo-crisis' className='w-full'>
       <Hero
         animation={strokeCrisisManagement}
         title="¿La tormenta perfecta?"
