@@ -170,7 +170,7 @@ export default function CompensationStrategy() {
               title: {text: 'Conozca cómo nuestras estrategias de compensación pueden transformar tu empresa'},
               subtitle: {text: 'Contáctanos y conversemos'}
             }}
-            button={{text: 'Contáctanos', href: '/contactanos'}}
+            button={{text: 'Contáctanos', href: '/contactanos#contact-us'}}
           />
         </div>
       </div>

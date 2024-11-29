@@ -1,4 +1,5 @@
 import Card from "./Card.jsx";
+import { HashLink } from "react-router-hash-link";
 
 /**
  * @param {string|undefined} className
@@ -27,7 +28,7 @@ export default function Cta({className,content, button}) {
           {content.subtitle.text}
         </p>
 
-        <a href="" className='btn-tertiary'>{button.text}</a>
+        <HashLink to={button.href ?? '/'} className='btn-tertiary'>{button.text}</HashLink>
       </div>
     </Card>
   );

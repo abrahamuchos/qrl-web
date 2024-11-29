@@ -302,7 +302,7 @@ export default function TradeUnionStrategy() {
               title: {text: 'Alcanzar la paz laboral y optimizar tus operaciones'},
               subtitle: {text: 'Contáctanos y conversamos'}
             }}
-            button={{text: 'Contáctanos', href: '/contactanos'}}
+            button={{text: 'Contáctanos', href: '/contactanos#contact-us'}}
           />
         </div>
       </div>

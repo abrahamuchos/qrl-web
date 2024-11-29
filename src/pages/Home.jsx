@@ -15,6 +15,7 @@ import stroke4 from "../assets/img/stroke-4.png"
 import sindicalImg from "../assets/img/sindical-work.png";
 import person1Img from '../assets/img/duliana.png';
 import person2Img from '../assets/img/gustavo.png';
+import { HashLink } from "react-router-hash-link";
 
 
 
@@ -62,7 +63,7 @@ export default function Home() {
             Impulsa tu negocio con ideas que marcan la diferencia.
           </h3>
           <div className="flex justify-center sm:justify-end">
-            <a href="/sobre-nosotros" className='btn-primary'>Descubre más</a>
+            <HashLink to="/sobre-nosotros#about-us" className='btn-primary'>Descubre más</HashLink>
           </div>
         </div>
       </div>
@@ -88,7 +89,7 @@ export default function Home() {
                 Un nuevo enfoque en la relación sindicato y empresa
               </h2>
               <div className="flex items-stretch justify-center">
-                <a href="/" className="btn-secondary block">Descubre más</a>
+                <HashLink to="/estrategia-sindical#estrategia-sindical" className="btn-secondary block">Descubre más</HashLink>
               </div>
             </div>
 
@@ -199,7 +200,7 @@ export default function Home() {
               </h3>
 
               <div className="flex justify-center sm:justify-end">
-                <a href="/sobre-nosotros" className='btn-secondary'>Descubre más</a>
+                <HashLink to="/roadmap#roadmap" className='btn-secondary'>Descubre más</HashLink>
               </div>
             </Card>
 
@@ -225,7 +226,7 @@ export default function Home() {
               </h3>
 
               <div className="flex justify-center sm:justify-end">
-                <a href="/sobre-nosotros" className='btn-primary'>Descubre más</a>
+                <HashLink to="/roadmap#corporate" className='btn-primary'>Descubre más</HashLink>
               </div>
             </Card>
           </div>
@@ -259,7 +260,7 @@ export default function Home() {
               Planifica para el éxito, incluso en tiempos difíciles
             </p>
             <div className="flex justify-center sm:justify-end mt-5">
-              <a href="/sobre-nosotros" className='btn-primary'>Descubre más</a>
+              <HashLink to="/manejo-crisis#manejo-crisis" className='btn-primary'>Descubre más</HashLink>
             </div>
           </Card>
 
@@ -271,7 +272,7 @@ export default function Home() {
               Invierte en tu talento, cosecha resultados excepcionales
             </p>
             <div className="flex justify-center sm:justify-end mt-5">
-              <a href="/sobre-nosotros" className='btn-primary'>Descubre más</a>
+              <HashLink to="/estrategia-compensacion#compensation-strategy" className='btn-primary'>Descubre más</HashLink>
             </div>
           </Card>
 
@@ -300,7 +301,7 @@ export default function Home() {
                 Centraliza, automatiza y colabora en un solo lugar
               </p>
 
-              <a href="" className='btn-tertiary'>Próximamente</a>
+              <HashLink to="/cts#cts" className='btn-tertiary'>Próximamente</HashLink>
             </div>
           </Card>
         </div>
