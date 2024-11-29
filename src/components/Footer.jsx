@@ -1,6 +1,8 @@
+import { Link } from 'react-router-dom';
 import fbIcon from '../assets/img/svg/fb-icon.svg';
 import igIcon from '../assets/img/svg/ig-icon.svg';
 import linkedinIcon from '../assets/img/svg/linkedin-icon.svg';
+import { HashLink } from "react-router-hash-link";
 
 export default function Footer() {
 
@@ -9,7 +11,8 @@ export default function Footer() {
       <footer className='w-full max-container bg-white rounded-t-[60px] shadow-2xl absolute left-1/2 right-1/2
       -translate-x-1/2 -translate-y-0 bottom-0'
       >
-        <div className='flex flex-col justify-center items-center px-5 py-10 lg:flex-row lg:justify-between lg:px-3 xl:px-10'>
+        <div
+          className='flex flex-col justify-center items-center px-5 py-10 lg:flex-row lg:justify-between lg:px-3 xl:px-10'>
           <div className='lg:mr-6'>
             <h3 className="heading-2-bold text-Dark-Violet">Más allá de la consultoría.</h3>
             <h3 className="heading-3-bold text-Dark-Violet mb-10">¡Contáctanos!</h3>
@@ -20,80 +23,80 @@ export default function Footer() {
           <div className="flex flex-col md:flex-row md:gap-7 lg:gap-3 xl:gap-5">
             <ul className='flex flex-col gap-3 p-0 my-5 lg:my-0'>
               <li>
-                <a href="#" className="text-sm lg:text-base font-bold text-Dark-Violet">
+                <HashLink to="/#inicio" className="text-sm lg:text-base font-bold text-Dark-Violet">
                   Inicio
-                </a>
+                </HashLink>
               </li>
               <li>
-                <a href="#" className="text-sm lg:text-base font-bold text-Dark-Violet">
+                <HashLink to="/sobre-nosotros#about-us" className="text-sm lg:text-base font-bold text-Dark-Violet">
                   ¿Quiénes somos?
-                </a>
+                </HashLink>
               </li>
               <li>
-                <a href="#" className="text-sm lg:text-base font-bold text-Dark-Violet">
+                <HashLink to="/contactanos#contact-us" className="text-sm lg:text-base font-bold text-Dark-Violet">
                   Contáctanos
-                </a>
+                </HashLink>
               </li>
               <li>
-                <a href="#" className="text-sm lg:text-base font-bold text-Dark-Violet">
+                <HashLink to="/politica-privacidad#politica-privacidad" className="text-sm lg:text-base font-bold text-Dark-Violet">
                   Política de privacidad
-                </a>
+                </HashLink>
               </li>
               <li>
-                <a href="#" className="text-sm lg:text-base font-bold text-Dark-Violet">
+                <HashLink to="/terminos-condiciones#terminos-condiciones" className="text-sm lg:text-base font-bold text-Dark-Violet">
                   Términos y condiciones
-                </a>
+                </HashLink>
               </li>
             </ul>
 
             <ul className='flex flex-col gap-3 p-0 my-5 lg:my-0'>
               <li>
-                <a href="#" className="text-sm lg:text-base font-bold text-Dark-Violet">
+                <HashLink to="/roadmap#roadmap" className="text-sm lg:text-base font-bold text-Dark-Violet">
                   Roadmap
-                </a>
+                </HashLink>
               </li>
               <li>
-                <a href="#" className="text-sm lg:text-base text-Dark-Violet">
+                <HashLink to="/roadmap#premium" className="text-sm lg:text-base text-Dark-Violet">
                   Roadmap Premium
-                </a>
+                </HashLink>
               </li>
               <li>
-                <a href="#" className="text-sm lg:text-base text-Dark-Violet">
+                <HashLink to="/roadmap#corporate" className="text-sm lg:text-base text-Dark-Violet">
                   Corporate Roadmap
-                </a>
+                </HashLink>
               </li>
               <li>
-                <a href="#" className="text-sm lg:text-base font-bold text-Dark-Violet">
+                <HashLink to="/manejo-crisis#manejo-crisis" className="text-sm lg:text-base font-bold text-Dark-Violet">
                   Manejo de Crisis
-                </a>
+                </HashLink>
               </li>
               <li>
-                <a href="#" className="text-sm lg:text-base text-Dark-Violet">
+                <HashLink to="/manejo-crisis#downsizing" className="text-sm lg:text-base text-Dark-Violet">
                   Downsizing
-                </a>
+                </HashLink>
               </li>
             </ul>
 
             <ul className='flex flex-col gap-3 p-0 my-5 lg:my-0'>
               <li>
-                <a href="#" className="text-sm lg:text-base font-bold text-Dark-Violet">
+                <HashLink to="/estrategia-sindical#estrategia-sindical" className="text-sm lg:text-base font-bold text-Dark-Violet">
                   Estrategia Sindical
-                </a>
+                </HashLink>
               </li>
               <li>
-                <a href="#" className="text-sm lg:text-base text-Dark-Violet">
+                <HashLink to="/estrategia-sindical#negociacion-colectiva" className="text-sm lg:text-base text-Dark-Violet">
                   Negociación colectiva
-                </a>
+                </HashLink>
               </li>
               <li>
-                <a href="#" className="text-sm lg:text-base text-Dark-Violet">
+                <HashLink to="/estrategia-sindical#manejo-conflictos" className="text-sm lg:text-base text-Dark-Violet">
                   Manejo de conflictos
-                </a>
+                </HashLink>
               </li>
               <li>
-                <a href="#" className="text-sm lg:text-base font-bold text-Dark-Violet">
+                <HashLink to="/estrategia-compensacion#compensation-strategy" className="text-sm lg:text-base font-bold text-Dark-Violet">
                   Estrategia de compensación
-                </a>
+                </HashLink>
               </li>
             </ul>
           </div>
@@ -108,26 +111,23 @@ export default function Footer() {
           </div>
 
           <div className='order-1 md:order-2 flex flex-row gap-5'>
-            <a href="/#">
+            <a href="https://www.instagram.com/qrlstrategy" target='_blank'>
               <img src={igIcon} alt="ig-icon" className='w-14 md:w-11'/>
             </a>
-            <a href="#">
+            <Link to="https://www.google.co.ve" target='_blank'>
               <img src={fbIcon} alt="fb-icon" className='w-14 md:w-11'/>
-            </a>
-            <a href="#">
+            </Link>
+            <Link to="https://www.google.co.ve" target='_blank'>
               <img src={linkedinIcon} alt="likenin-icon" className='w-14 md:w-11'/>
-            </a>
+            </Link>
           </div>
 
           <div className='order-2 md:order-3'>
             <span className='text-sm text-Dark-Violet'>hola@qrlstrategy.com</span>
           </div>
         </div>
-
-
       </footer>
     </div>
-
   );
 }
 

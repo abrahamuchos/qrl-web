@@ -21,7 +21,7 @@ import person2Img from '../assets/img/gustavo.png';
 export default function Home() {
 
   return (
-    <section className='w-full'>
+    <section id='inicio' className='w-full'>
       <Hero
         animation={trazoHome}
         title="Transformamos tu negocio, juntos."

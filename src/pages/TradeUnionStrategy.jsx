@@ -15,7 +15,7 @@ import trazoHome from "@animations/trazos-home-2.json";
 export default function TradeUnionStrategy() {
 
   return (
-    <section className='w-full'>
+    <section id='estrategia-sindical' className='w-full'>
       <Hero
         animation={trazoHome}
         title="Anticipa conflictos, construye relaciones sostenibles"

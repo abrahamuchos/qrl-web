@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 import logo from '../assets/img/svg/qrl-logo.svg';
-import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 
 export default function Navigation() {
@@ -66,7 +66,9 @@ export default function Navigation() {
         xl:w-[90%]
         2xl:w-[1400px] 2xl:px-20"
       >
-        <img src={logo} alt="qrl-strategy-logo" className='w-[137px]'/>
+        <Link to={"/"} className='z-50'>
+          <img src={logo} alt="qrl-strategy-logo" className='w-[137px]'/>
+        </Link>
 
         {/*Desktop Menu */}
         <div className="hidden space-x-6 w-3/5 lg:flex lg:justify-between lg:items-center">
@@ -207,11 +209,11 @@ export default function Navigation() {
                    className="block py-1 px-4 text-Very-dark-blue text-base font-bold ">
                   Roadmap
                 </Link>
-                <HashLink href="/roadmap#premium"
+                <HashLink to="/roadmap#premium"
                    className="block py-3 px-6 text-Very-dark-blue text-base">
                   Roadmap Premium
                 </HashLink>
-                <HashLink href="/roadmap#corporate"
+                <HashLink to="/roadmap#corporate"
                    className="block py-3 px-6 text-Very-dark-blue text-base">
                   Corporate Roadmap
                 </HashLink>
@@ -244,10 +246,10 @@ export default function Navigation() {
               </div>
 
               <div className='mb-3'>
-                <a href="/estrategia-compensacion"
+                <Link to="/estrategia-compensacion"
                    className="block py-1 px-4 text-Very-dark-blue text-base font-bold ">
                   Estrategia de compensación
-                </a>
+                </Link>
               </div>
             </div>
           </div>

@@ -14,25 +14,26 @@ export default function ContactUs() {
     // console.log('Data>> ', form.current);
 
     setIsSuccess(true);
-    // emailjs
-    //   .sendForm('service_gond44h', 'template_rp3qb6p', form.current, {
-    //     publicKey: 'gsGa-pR4f4i271Eom',
-    //   })
-    //   .then(
-    //     () => {
-    //       console.log('SUCCESS!');
-    //       setIsSuccess(true);
-    //     },
-    //     (error) => {
-    //       console.log('FAILED...', error);
-    //     },
-    //   );
+    emailjs
+      .sendForm('service_gond44h', 'template_rp3qb6p', form.current, {
+        publicKey: 'gsGa-pR4f4i271Eom',
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+          setIsSuccess(true);
+        },
+        (error) => {
+          alert('Upps... Algo a ocurrido, por favor intenta de nuevo')
+          console.log('FAILED...', error);
+        },
+      );
 
   }
 
 
   return (
-    <section className='w-full bg-Dark-blue'>
+    <section id='contact-us' className='w-full bg-Dark-blue'>
       <div className="max-container flex justify-center items-center pt-32">
         <Card
           variant='secondary'
