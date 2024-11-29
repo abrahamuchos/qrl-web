@@ -5,11 +5,12 @@ import strokeCts from "@animations/cts.json";
 import stroke from '../assets/img/stroke-14.png';
 import stroke2 from "../assets/img/stroke-15.png";
 import Card from "../components/Card.jsx";
+import { Link } from "react-router-dom";
 
 export default function Cts() {
 
   return (
-    <section className='w-full'>
+    <section id='cts' className='w-full'>
       <Hero
         animation={strokeCts}
         title="Innovando en la gestión de procesos"
@@ -63,7 +64,7 @@ export default function Cts() {
               </h3>
 
               <div className="flex justify-center">
-                <a href="/contactanos" className='btn-tertiary'>Contáctanos</a>
+                <Link to="/contactanos#contact-us" className='btn-tertiary'>Contáctanos</Link>
               </div>
             </div>
 

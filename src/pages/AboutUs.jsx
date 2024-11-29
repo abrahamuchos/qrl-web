@@ -142,7 +142,7 @@ export default function AboutUs() {
               title: {text: 'Desafiando el status quo'},
               subtitle: {text: 'Contáctanos y conversemos '}
             }}
-            button={{text: 'Contáctanos', href: '/contactanos'}}
+            button={{text: 'Contáctanos', href: '/contactanos#contact-us'}}
           />
         </div>
       </div>

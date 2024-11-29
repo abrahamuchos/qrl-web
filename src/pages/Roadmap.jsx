@@ -159,7 +159,7 @@ export default function Roadmap() {
               title: {text: 'Ok QRL, estamos listos para el despegue'},
               subtitle: {text: 'Contáctanos y conversemos para dar inicio a este viaje intergalactico'}
             }}
-            button={{text: 'Contáctanos', href: '/contactanos'}}
+            button={{text: 'Contáctanos', href: '/contactanos#contact-us'}}
           />
         </div>
       </div>

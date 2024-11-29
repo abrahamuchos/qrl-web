@@ -149,7 +149,7 @@ export default function CrisisManagement() {
               title: {text: 'Navegue los cambios del mercado con confianza. '},
               subtitle: {text: 'Nuestro manejo de crisis lo ayudará a adaptarse y crecer.'}
             }}
-            button={{text: 'Contáctanos', href: '/contactanos'}}
+            button={{text: 'Contáctanos', href: '/contactanos#contact-us'}}
           />
         </div>
       </div>
