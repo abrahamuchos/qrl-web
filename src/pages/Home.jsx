@@ -88,8 +88,9 @@ export default function Home() {
               <h2 className='heading-1-bold text-white mb-5'>
                 Un nuevo enfoque en la relación sindicato y empresa
               </h2>
-              <div className="flex items-stretch justify-center">
-                <HashLink to="/estrategia-sindical#estrategia-sindical" className="btn-secondary block">Descubre más</HashLink>
+              <div className="flex items-stretch justify-center xl:mb-10">
+                <HashLink to="/estrategia-sindical#estrategia-sindical" className="btn-secondary block">Descubre
+                  más</HashLink>
               </div>
             </div>
 
@@ -105,30 +106,67 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Percentages Desktop */}
-          <div className="max-lg:hidden absolute flex justify-between w-[90%] top-[78%]">
+          {/*## WORK ##*/}
+          <div className="max-lg:hidden absolute flex justify-between w-[90%] lg:top-[75%] xl:top-[69%]"
+          >
             <SingleCard
-              className='w-[190px] h-[160px] md:w-[200px] md:h-[200px]'
+              className='w-[220px] h-[220px] md:w-[200px] md:h-[200px] lg:w-[220px] lg:h-[205px] xl:w-[240px] xl:h-[225px]'
               content={{
                 title: {text: '8,5%'},
-                paragraph: {text: 'de trabajadores ha sufrido violencia durante su labor'}
+                paragraph: {text: 'de trabajadores ha sufrido violencia durante su labor', className: 'lg:font-bold'}
               }}
             />
             <SingleCard
-              className='w-[190px] h-[160px] md:w-[200px] md:h-[200px]'
+              className='w-[220px] h-[220px] md:w-[200px] md:h-[200px] lg:w-[220px] lg:h-[205px] xl:w-[240px] xl:h-[225px]'
               content={{
                 title: {text: '17,9%'},
-                paragraph: {text: 'de trabajadores ha sufrido violencia psicologica durante su labor'}
+                paragraph: {
+                  text: 'de trabajadores ha sufrido violencia psicológica durante su labor',
+                  className: 'lg:font-bold'
+                }
               }}
             />
             <SingleCard
-              className='w-[190px] h-[160px] md:w-[200px] md:h-[200px]'
+              className='w-[220px] h-[220px] md:w-[200px] md:h-[200px] lg:w-[220px] lg:h-[205px] xl:w-[240px] xl:h-[225px] '
               content={{
                 title: {text: '14%'},
-                paragraph: {text: 'de caída en la productividad por violencia en el trabajo'}
+                paragraph: {text: 'de caída en la productividad por violencia en el trabajo', className: 'lg:font-bold'}
               }}
             />
+
+            {/*<div className="mt-10 basis-full text-center">*/}
+            {/*  <p className='text-base text-white'>Fuente: Organización Internacional del Trabajo (OIT)</p>*/}
+            {/*</div>*/}
           </div>
+
+
+          {/*## END WORK ##*/}
+
+
+          {/* Percentages Desktop */}
+          {/*<div className="max-lg:hidden absolute flex justify-between w-[90%] top-[78%]">*/}
+          {/*  <SingleCard*/}
+          {/*    className='w-[190px] h-[160px] md:w-[200px] md:h-[200px]'*/}
+          {/*    content={{*/}
+          {/*      title: {text: '8,5%'},*/}
+          {/*      paragraph: {text: 'de trabajadores ha sufrido violencia durante su labor'}*/}
+          {/*    }}*/}
+          {/*  />*/}
+          {/*  <SingleCard*/}
+          {/*    className='w-[190px] h-[160px] md:w-[200px] md:h-[200px]'*/}
+          {/*    content={{*/}
+          {/*      title: {text: '17,9%'},*/}
+          {/*      paragraph: {text: 'de trabajadores ha sufrido violencia psicologica durante su labor'}*/}
+          {/*    }}*/}
+          {/*  />*/}
+          {/*  <SingleCard*/}
+          {/*    className='w-[190px] h-[160px] md:w-[200px] md:h-[200px]'*/}
+          {/*    content={{*/}
+          {/*      title: {text: '14%'},*/}
+          {/*      paragraph: {text: 'de caída en la productividad por violencia en el trabajo'}*/}
+          {/*    }}*/}
+          {/*  />*/}
+          {/*</div>*/}
           {/* End Percentages Desktop */}
         </Card>
 
