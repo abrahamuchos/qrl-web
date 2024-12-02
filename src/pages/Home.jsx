@@ -18,7 +18,6 @@ import person2Img from '../assets/img/gustavo.png';
 import { HashLink } from "react-router-hash-link";
 
 
-
 export default function Home() {
 
   return (
@@ -70,7 +69,7 @@ export default function Home() {
       {/* End About Us*/}
 
       {/* Trade Union Strategy (Estrategia Sindical)*/}
-      <div className='w-full h-[1100px] bg-Light-gray flex flex-col justify-center items-center
+      <div className='w-full h-[1250px] bg-Light-gray flex flex-col justify-center items-center
         md:h-[810px] md:pt-24
         lg:flex-row lg:h-[700px] lg:pt-0
         2xl:max-contaier'
@@ -106,9 +105,8 @@ export default function Home() {
             </div>
           </div>
 
-          {/*## WORK ##*/}
-          <div className="max-lg:hidden absolute flex justify-between w-[90%] lg:top-[75%] xl:top-[69%]"
-          >
+          {/* Percentages Desktop */}
+          <div className="max-lg:hidden absolute flex justify-between w-[90%] lg:top-[75%] xl:top-[69%]">
             <SingleCard
               className='w-[220px] h-[220px] md:w-[200px] md:h-[200px] lg:w-[220px] lg:h-[205px] xl:w-[240px] xl:h-[225px]'
               content={{
@@ -134,67 +132,35 @@ export default function Home() {
               }}
             />
 
-            {/*<div className="mt-10 basis-full text-center">*/}
-            {/*  <p className='text-base text-white'>Fuente: Organización Internacional del Trabajo (OIT)</p>*/}
-            {/*</div>*/}
           </div>
-
-
-          {/*## END WORK ##*/}
-
-
-          {/* Percentages Desktop */}
-          {/*<div className="max-lg:hidden absolute flex justify-between w-[90%] top-[78%]">*/}
-          {/*  <SingleCard*/}
-          {/*    className='w-[190px] h-[160px] md:w-[200px] md:h-[200px]'*/}
-          {/*    content={{*/}
-          {/*      title: {text: '8,5%'},*/}
-          {/*      paragraph: {text: 'de trabajadores ha sufrido violencia durante su labor'}*/}
-          {/*    }}*/}
-          {/*  />*/}
-          {/*  <SingleCard*/}
-          {/*    className='w-[190px] h-[160px] md:w-[200px] md:h-[200px]'*/}
-          {/*    content={{*/}
-          {/*      title: {text: '17,9%'},*/}
-          {/*      paragraph: {text: 'de trabajadores ha sufrido violencia psicologica durante su labor'}*/}
-          {/*    }}*/}
-          {/*  />*/}
-          {/*  <SingleCard*/}
-          {/*    className='w-[190px] h-[160px] md:w-[200px] md:h-[200px]'*/}
-          {/*    content={{*/}
-          {/*      title: {text: '14%'},*/}
-          {/*      paragraph: {text: 'de caída en la productividad por violencia en el trabajo'}*/}
-          {/*    }}*/}
-          {/*  />*/}
-          {/*</div>*/}
-          {/* End Percentages Desktop */}
         </Card>
+        {/* End Percentages Desktop */}
 
-        {/* Percentages Mobile */}
-        <div className='flex flex-col gap-10 mt-5 md:gap-1 md:flex-row lg:hidden'>
+        {/* Percentages Mobile/Tablet */}
+        <div className='flex flex-col gap-10 pt-5 md:gap-10 md:pt-10 md:flex-row lg:hidden'>
           <SingleCard
-            className='max-w-[300px] md:max-w-[255px] flex flex-col justify-around bg-Light-gray backdrop-blur-sm opacity-80'
+            className='w-[220px] h-[195px] md:w-[190px] md:h-[180px] flex flex-col justify-around bg-Light-gray backdrop-blur-sm opacity-80'
             content={{
               title: {text: '8,5%', className: 'text-Very-dark-blue'},
               paragraph: {text: 'de trabajadores ha sufrido violencia durante su labor'}
             }}
           />
           <SingleCard
-            className='max-w-[300px] md:max-w-[255px] flex flex-col justify-around bg-Light-gray backdrop-blur-sm opacity-80'
+            className='w-[220px] h-[195px] md:w-[190px] md:h-[180px] flex flex-col justify-around bg-Light-gray backdrop-blur-sm opacity-80'
             content={{
               title: {text: '17,9%', className: 'text-Very-dark-blue'},
               paragraph: {text: 'ha sufrido violencia psicologica en su vida laboral'}
             }}
           />
           <SingleCard
-            className='max-w-[300px] md:max-w-[255px] flex flex-col justify-around bg-Light-gray backdrop-blur-sm opacity-80'
+            className='w-[220px] h-[195px] md:w-[190px] md:h-[180px] flex flex-col justify-around bg-Light-gray backdrop-blur-sm opacity-80'
             content={{
               title: {text: '14%', className: 'text-Very-dark-blue'},
               paragraph: {text: 'de caída en la productividad por violencia en el trabajo'}
             }}
           />
         </div>
-        {/* End Percentages Mobile */}
+        {/* End Percentages Mobile/Tablet */}
 
       </div>
       {/* End Trade Union Strategy (Estrategia Sindical)*/}
@@ -310,7 +276,8 @@ export default function Home() {
               Invierte en tu talento, cosecha resultados excepcionales
             </p>
             <div className="flex justify-center sm:justify-end mt-5">
-              <HashLink to="/estrategia-compensacion#compensation-strategy" className='btn-primary'>Descubre más</HashLink>
+              <HashLink to="/estrategia-compensacion#compensation-strategy" className='btn-primary'>Descubre
+                más</HashLink>
             </div>
           </Card>
 
