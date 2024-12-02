@@ -1,16 +1,20 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 import logo from '../assets/img/svg/qrl-logo.svg';
 import { HashLink } from "react-router-hash-link";
 
 export default function Navigation() {
-
+  const location = useLocation();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(/**@type{boolean} */ false);
   const [isOpenDropdown, setIsOpenDropdown] = useState(/**@type{boolean} */ false);
   const [isOpenDesktopDropdown, setIsOpenDesktopDropdown] = useState(/**@type{boolean} */ false);
   const [timeoutId, setTimeoutId] = useState(/**@type{NodeJS.Timeout|null|number}  */ null);
+
+  useEffect(() => {
+    setIsMobileMenuOpen(false);
+  }, [location]);
 
   /**
    * Toggles the mobile menu open and closed.
@@ -62,7 +66,7 @@ export default function Navigation() {
   return (
     <nav className='absolute top-0 z-50 w-full flex flex-col justify-center items-center lg:top-4'>
       <div className="flex w-full justify-between items-center py-1 px-6 backdrop-blur-sm bg-white/20 ring-1 ring-black/5
-        lg:m-2 lg:py-1 lg:px-16 lg:w-[95%] lg:rounded-2xl lg:shadow-lg
+        lg:m-2 lg:py-1 lg:px-16 lg:w-[95%] lg:rounded-2xl lg:shadow-l
         xl:w-[90%]
         2xl:w-[1400px] 2xl:px-20"
       >
@@ -177,7 +181,7 @@ export default function Navigation() {
           lg:hidden`
         }
       >
-        <Link to="/sobre-nosotros" className='block p-5 text-lg text-white font-semibold  tracking-tighter'>
+        <Link to="/sobre-nosotros" className='block p-5 text-lg text-white font-semibold tracking-tighter text-shadow'>
           Quienes
         </Link>
 
@@ -185,12 +189,12 @@ export default function Navigation() {
         <div className="relative">
           <button
             onClick={toggleDropdown}
-            className="flex w-full items-center justify-between p-5 text-lg text-white font-semibold"
+            className="flex w-full items-center justify-between p-5 text-lg text-white font-semibold text-shadow"
           >
             Reta el status quo
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className={`h-5 w-5 transition-transform duration-200 ${isOpenDropdown ? 'rotate-180' : ''}`}
+              className={`h-5 w-5 transition-transform duration-200  ${isOpenDropdown ? 'rotate-180' : ''}`}
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -206,48 +210,48 @@ export default function Navigation() {
             <div className="pl-6">
               <div className='mb-3'>
                 <Link to="/roadmap"
-                   className="block py-1 px-4 text-Very-dark-blue text-base font-bold ">
+                   className="block py-1 px-4 text-Very-dark-blue text-base font-bold  text-shdow">
                   Roadmap
                 </Link>
                 <HashLink to="/roadmap#premium"
-                   className="block py-3 px-6 text-Very-dark-blue text-base">
+                   className="block py-3 px-6 text-Very-dark-blue text-base text-shdow">
                   Roadmap Premium
                 </HashLink>
                 <HashLink to="/roadmap#corporate"
-                   className="block py-3 px-6 text-Very-dark-blue text-base">
+                   className="block py-3 px-6 text-Very-dark-blue text-base text-shdow">
                   Corporate Roadmap
                 </HashLink>
               </div>
 
               <div className='mb-3'>
                 <Link to="/estrategia-sindical"
-                   className="block py-1 px-4 text-Very-dark-blue text-base font-bold ">
+                   className="block py-1 px-4 text-Very-dark-blue text-base font-bold text-shadow">
                   Estrategia Sindical
                 </Link>
                 <HashLink to="/estrategia-sindical#negociacion-colectiva"
-                   className="block py-3 px-6 text-Very-dark-blue text-base">
+                   className="block py-3 px-6 text-Very-dark-blue text-base text-shadow">
                   Negociación colectiva
                 </HashLink>
                 <HashLink to="/estrategia-sindical#manejo-conflictos"
-                   className="block py-3 px-6 text-Very-dark-blue text-base">
+                   className="block py-3 px-6 text-Very-dark-blue text-base text-shadow">
                   Manejo de conflictos
                 </HashLink>
               </div>
 
               <div className='mb-3'>
                 <Link to="/manejo-crisis"
-                   className="block py-1 px-4 text-Very-dark-blue text-base font-bold ">
+                   className="block py-1 px-4 text-Very-dark-blue text-base font-bold text-shadow">
                   Manejo de Crisis
                 </Link>
                 <HashLink to="/manejo-crisis#downsizing"
-                   className="block py-3 px-6 text-Very-dark-blue text-base">
+                   className="block py-3 px-6 text-Very-dark-blue text-base text-shadow">
                   Downsizing
                 </HashLink>
               </div>
 
               <div className='mb-3'>
                 <Link to="/estrategia-compensacion"
-                   className="block py-1 px-4 text-Very-dark-blue text-base font-bold ">
+                   className="block py-1 px-4 text-Very-dark-blue text-base font-bold text-shadow">
                   Estrategia de compensación
                 </Link>
               </div>
@@ -257,10 +261,10 @@ export default function Navigation() {
         </div>
         {/* End Dropdown menu*/}
 
-        <a href="/contactanos" className='block p-5 text-lg text-white font-semibold  tracking-tighter'>
+        <a href="/contactanos" className='block p-5 text-lg text-white font-semibold tracking-tighter text-shadow'>
           Lidera y trasciende
         </a>
-        <a href="/contactanos" className='block p-5 text-lg text-white font-semibold  tracking-tighter'>
+        <a href="/contactanos" className='block p-5 text-lg text-white font-semibold tracking-tighter text-shadow'>
           Contacto
         </a>
       </div>

@@ -13,10 +13,9 @@ import stroke2 from "../assets/img/stroke-2.png"
 import stroke3 from "../assets/img/stroke-3.png"
 import stroke4 from "../assets/img/stroke-4.png"
 import sindicalImg from "../assets/img/sindical-work.png";
-import person1Img from '../assets/img/duliana.png';
+// import person1Img from '../assets/img/duliana.png';
 import person2Img from '../assets/img/gustavo.png';
 import { HashLink } from "react-router-hash-link";
-
 
 
 export default function Home() {
@@ -70,7 +69,7 @@ export default function Home() {
       {/* End About Us*/}
 
       {/* Trade Union Strategy (Estrategia Sindical)*/}
-      <div className='w-full h-[1100px] bg-Light-gray flex flex-col justify-center items-center
+      <div className='w-full h-[1250px] bg-Light-gray flex flex-col justify-center items-center
         md:h-[810px] md:pt-24
         lg:flex-row lg:h-[700px] lg:pt-0
         2xl:max-contaier'
@@ -88,8 +87,9 @@ export default function Home() {
               <h2 className='heading-1-bold text-white mb-5'>
                 Un nuevo enfoque en la relación sindicato y empresa
               </h2>
-              <div className="flex items-stretch justify-center">
-                <HashLink to="/estrategia-sindical#estrategia-sindical" className="btn-secondary block">Descubre más</HashLink>
+              <div className="flex items-stretch justify-center xl:mb-10">
+                <HashLink to="/estrategia-sindical#estrategia-sindical" className="btn-secondary block">Descubre
+                  más</HashLink>
               </div>
             </div>
 
@@ -106,68 +106,79 @@ export default function Home() {
           </div>
 
           {/* Percentages Desktop */}
-          <div className="max-lg:hidden absolute flex justify-between w-[90%] top-[78%]">
+          <div className="max-lg:hidden absolute flex justify-between w-[90%] lg:top-[75%] xl:top-[69%]">
             <SingleCard
-              className='w-[190px] h-[160px] md:w-[200px] md:h-[200px]'
+              className='w-[220px] h-[220px] md:w-[200px] md:h-[200px] lg:w-[220px] lg:h-[205px] xl:w-[240px] xl:h-[225px]'
               content={{
                 title: {text: '8,5%'},
-                paragraph: {text: 'de trabajadores ha sufrido violencia durante su labor'}
+                paragraph: {text: 'de trabajadores ha sufrido violencia durante su labor', className: 'lg:font-bold'}
               }}
             />
             <SingleCard
-              className='w-[190px] h-[160px] md:w-[200px] md:h-[200px]'
+              className='w-[220px] h-[220px] md:w-[200px] md:h-[200px] lg:w-[220px] lg:h-[205px] xl:w-[240px] xl:h-[225px]'
               content={{
                 title: {text: '17,9%'},
-                paragraph: {text: 'de trabajadores ha sufrido violencia psicologica durante su labor'}
+                paragraph: {
+                  text: 'de trabajadores ha sufrido violencia psicológica durante su labor',
+                  className: 'lg:font-bold'
+                }
               }}
             />
             <SingleCard
-              className='w-[190px] h-[160px] md:w-[200px] md:h-[200px]'
+              className='w-[220px] h-[220px] md:w-[200px] md:h-[200px] lg:w-[220px] lg:h-[205px] xl:w-[240px] xl:h-[225px] '
               content={{
                 title: {text: '14%'},
-                paragraph: {text: 'de caída en la productividad por violencia en el trabajo'}
+                paragraph: {text: 'de caída en la productividad por violencia en el trabajo', className: 'lg:font-bold'}
               }}
             />
-          </div>
-          {/* End Percentages Desktop */}
-        </Card>
 
-        {/* Percentages Mobile */}
-        <div className='flex flex-col gap-10 mt-5 md:gap-1 md:flex-row lg:hidden'>
+          </div>
+        </Card>
+        {/* End Percentages Desktop */}
+
+        {/* Percentages Mobile/Tablet */}
+        <div className='flex flex-col gap-10 pt-5 md:gap-10 md:pt-10 md:flex-row lg:hidden'>
           <SingleCard
-            className='max-w-[300px] md:max-w-[255px] flex flex-col justify-around bg-Light-gray backdrop-blur-sm opacity-80'
+            className='w-[220px] h-[195px] md:w-[190px] md:h-[180px] flex flex-col justify-around bg-Light-gray backdrop-blur-sm opacity-80'
             content={{
               title: {text: '8,5%', className: 'text-Very-dark-blue'},
               paragraph: {text: 'de trabajadores ha sufrido violencia durante su labor'}
             }}
           />
           <SingleCard
-            className='max-w-[300px] md:max-w-[255px] flex flex-col justify-around bg-Light-gray backdrop-blur-sm opacity-80'
+            className='w-[220px] h-[195px] md:w-[190px] md:h-[180px] flex flex-col justify-around bg-Light-gray backdrop-blur-sm opacity-80'
             content={{
               title: {text: '17,9%', className: 'text-Very-dark-blue'},
               paragraph: {text: 'ha sufrido violencia psicologica en su vida laboral'}
             }}
           />
           <SingleCard
-            className='max-w-[300px] md:max-w-[255px] flex flex-col justify-around bg-Light-gray backdrop-blur-sm opacity-80'
+            className='w-[220px] h-[195px] md:w-[190px] md:h-[180px] flex flex-col justify-around bg-Light-gray backdrop-blur-sm opacity-80'
             content={{
               title: {text: '14%', className: 'text-Very-dark-blue'},
               paragraph: {text: 'de caída en la productividad por violencia en el trabajo'}
             }}
           />
         </div>
-        {/* End Percentages Mobile */}
+        {/* End Percentages Mobile/Tablet */}
 
       </div>
       {/* End Trade Union Strategy (Estrategia Sindical)*/}
 
       {/*Testimonies*/}
       <div className="bg-white w-full">
-        <Testimony
-          className={'py-16 px-10'}
-          image={person1Img}
-          content="“Estamos convencidos que el compromiso no es una mera intención o deseo, sino un acto concreto que implica responsabilidad y lealtad hacia nuestros clientes y colaboradores. Es una manera de afirmar nuestra existencia y de darle un sentido a nuestra vida”."
-        />
+        {/*<Testimony*/}
+        {/*  className={'py-16 px-10'}*/}
+        {/*  image={person1Img}*/}
+        {/*  content="“Estamos convencidos que el compromiso no es una mera intención o deseo, sino un acto concreto que implica responsabilidad y lealtad hacia nuestros clientes y colaboradores. Es una manera de afirmar nuestra existencia y de darle un sentido a nuestra vida”."*/}
+        {/*/>*/}
+        <div className="max-container py-16 px-10  md:px-14 lg:py-24 lg:px-28">
+          <p className='text-base text-Dark-blue text-center lg:heading-3'>
+            “Estamos convencidos que el compromiso no es una mera intención o deseo, sino un acto concreto que implica
+            responsabilidad y lealtad hacia nuestros clientes y colaboradores. Es una manera de afirmar nuestra
+            existencia y de darle un sentido a nuestra vida”.
+          </p>
+        </div>
       </div>
       {/*End  Testimonios*/}
 
@@ -238,11 +249,17 @@ export default function Home() {
 
       {/*Testimonies*/}
       <div className="bg-white w-full">
-        <Testimony
-          className={'py-16 px-10'}
-          image={person2Img}
-          content={"“Los principios y valores tienen que dejar de ser únicamente un fondo de pantalla en la computadora para convertirse en parte integrante de nuestro comportamiento ético diario”."}
-        />
+        {/*<Testimony*/}
+        {/*  className={'py-16 px-10'}*/}
+        {/*  image={person2Img}*/}
+        {/*  content={"“Los principios y valores tienen que dejar de ser únicamente un fondo de pantalla en la computadora para convertirse en parte integrante de nuestro comportamiento ético diario”."}*/}
+        {/*/>*/}
+        <div className="max-container py-16 px-10  md:px-14 lg:py-24 lg:px-28">
+          <p className='text-base text-Dark-blue text-center lg:heading-3'>
+            “Los principios y valores tienen que dejar de ser únicamente un fondo de pantalla en la computadora para
+            convertirse en parte integrante de nuestro comportamiento ético diario”.
+          </p>
+        </div>
       </div>
       {/*End  Testimonios*/}
 
@@ -272,7 +289,8 @@ export default function Home() {
               Invierte en tu talento, cosecha resultados excepcionales
             </p>
             <div className="flex justify-center sm:justify-end mt-5">
-              <HashLink to="/estrategia-compensacion#compensation-strategy" className='btn-primary'>Descubre más</HashLink>
+              <HashLink to="/estrategia-compensacion#compensation-strategy" className='btn-primary'>Descubre
+                más</HashLink>
             </div>
           </Card>
 

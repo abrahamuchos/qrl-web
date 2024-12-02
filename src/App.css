@@ -65,4 +65,8 @@ html,body{
     @apply rounded-xl bg-white border-white border-solid border-2 px-6 py-3  text-base text-Regular-gray lg:px-7 lg:py-4
   }
 
+  .text-shadow {
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+  }
+
 }
