@@ -13,7 +13,7 @@ import stroke2 from "../assets/img/stroke-2.png"
 import stroke3 from "../assets/img/stroke-3.png"
 import stroke4 from "../assets/img/stroke-4.png"
 import sindicalImg from "../assets/img/sindical-work.png";
-import person1Img from '../assets/img/duliana.png';
+// import person1Img from '../assets/img/duliana.png';
 import person2Img from '../assets/img/gustavo.png';
 import { HashLink } from "react-router-hash-link";
 
@@ -167,11 +167,18 @@ export default function Home() {
 
       {/*Testimonies*/}
       <div className="bg-white w-full">
-        <Testimony
-          className={'py-16 px-10'}
-          image={person1Img}
-          content="“Estamos convencidos que el compromiso no es una mera intención o deseo, sino un acto concreto que implica responsabilidad y lealtad hacia nuestros clientes y colaboradores. Es una manera de afirmar nuestra existencia y de darle un sentido a nuestra vida”."
-        />
+        {/*<Testimony*/}
+        {/*  className={'py-16 px-10'}*/}
+        {/*  image={person1Img}*/}
+        {/*  content="“Estamos convencidos que el compromiso no es una mera intención o deseo, sino un acto concreto que implica responsabilidad y lealtad hacia nuestros clientes y colaboradores. Es una manera de afirmar nuestra existencia y de darle un sentido a nuestra vida”."*/}
+        {/*/>*/}
+        <div className="max-container py-16 px-10  md:px-14 lg:py-24 lg:px-28">
+          <p className='text-base text-Dark-blue text-center lg:heading-3'>
+            “Estamos convencidos que el compromiso no es una mera intención o deseo, sino un acto concreto que implica
+            responsabilidad y lealtad hacia nuestros clientes y colaboradores. Es una manera de afirmar nuestra
+            existencia y de darle un sentido a nuestra vida”.
+          </p>
+        </div>
       </div>
       {/*End  Testimonios*/}
 
@@ -242,11 +249,17 @@ export default function Home() {
 
       {/*Testimonies*/}
       <div className="bg-white w-full">
-        <Testimony
-          className={'py-16 px-10'}
-          image={person2Img}
-          content={"“Los principios y valores tienen que dejar de ser únicamente un fondo de pantalla en la computadora para convertirse en parte integrante de nuestro comportamiento ético diario”."}
-        />
+        {/*<Testimony*/}
+        {/*  className={'py-16 px-10'}*/}
+        {/*  image={person2Img}*/}
+        {/*  content={"“Los principios y valores tienen que dejar de ser únicamente un fondo de pantalla en la computadora para convertirse en parte integrante de nuestro comportamiento ético diario”."}*/}
+        {/*/>*/}
+        <div className="max-container py-16 px-10  md:px-14 lg:py-24 lg:px-28">
+          <p className='text-base text-Dark-blue text-center lg:heading-3'>
+            “Los principios y valores tienen que dejar de ser únicamente un fondo de pantalla en la computadora para
+            convertirse en parte integrante de nuestro comportamiento ético diario”.
+          </p>
+        </div>
       </div>
       {/*End  Testimonios*/}
 
