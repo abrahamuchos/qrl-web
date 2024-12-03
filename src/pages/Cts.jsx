@@ -41,7 +41,7 @@ export default function Cts() {
             </h3>
 
             <div className="flex justify-center sm:justify-end">
-              <a href="/sobre-nosotros" className='btn-primary'>Próximamente</a>
+              <a href="/sobre-nosotros" className='btn-primary-outline'>Próximamente</a>
             </div>
           </Card>
 
@@ -64,7 +64,7 @@ export default function Cts() {
               </h3>
 
               <div className="flex justify-center">
-                <Link to="/contactanos#contact-us" className='btn-tertiary'>Contáctanos</Link>
+                <Link to="/contactanos#contact-us" className='btn-secondary'>Contáctanos</Link>
               </div>
             </div>
 

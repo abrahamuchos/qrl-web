@@ -317,7 +317,7 @@ export default function Home() {
                 Centraliza, automatiza y colabora en un solo lugar
               </p>
 
-              <HashLink to="/cts#cts" className='btn-tertiary'>Próximamente</HashLink>
+              <HashLink to="/cts#cts" className='btn-secondary'>Próximamente</HashLink>
             </div>
           </Card>
         </div>
