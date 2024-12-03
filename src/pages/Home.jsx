@@ -1,7 +1,7 @@
 import Hero from "../components/Hero.jsx";
 import Card from "../components/Card.jsx";
 import SingleCard from "../components/SingleCard.jsx";
-import Testimony from "../components/Testimony.jsx";
+// import Testimony from "../components/Testimony.jsx";
 import ContainerStroke from "../components/ContainerStroke.jsx";
 
 import trazoHome from "@animations/trazos-home-2.json";
@@ -14,7 +14,7 @@ import stroke3 from "../assets/img/stroke-3.png"
 import stroke4 from "../assets/img/stroke-4.png"
 import sindicalImg from "../assets/img/sindical-work.png";
 // import person1Img from '../assets/img/duliana.png';
-import person2Img from '../assets/img/gustavo.png';
+// import person2Img from '../assets/img/gustavo.png';
 import { HashLink } from "react-router-hash-link";
 
 
@@ -62,7 +62,7 @@ export default function Home() {
             Impulsa tu negocio con ideas que marcan la diferencia.
           </h3>
           <div className="flex justify-center sm:justify-end">
-            <HashLink to="/sobre-nosotros#about-us" className='btn-primary'>Descubre más</HashLink>
+            <HashLink to="/sobre-nosotros#about-us" className='btn-primary-outline'>Descubre más</HashLink>
           </div>
         </div>
       </div>
@@ -88,7 +88,7 @@ export default function Home() {
                 Un nuevo enfoque en la relación sindicato y empresa
               </h2>
               <div className="flex items-stretch justify-center xl:mb-10">
-                <HashLink to="/estrategia-sindical#estrategia-sindical" className="btn-secondary block">Descubre
+                <HashLink to="/estrategia-sindical#estrategia-sindical" className="btn-secondary-outline block">Descubre
                   más</HashLink>
               </div>
             </div>
@@ -211,7 +211,7 @@ export default function Home() {
               </h3>
 
               <div className="flex justify-center sm:justify-end">
-                <HashLink to="/roadmap#roadmap" className='btn-secondary'>Descubre más</HashLink>
+                <HashLink to="/roadmap#roadmap" className='btn-secondary-outline'>Descubre más</HashLink>
               </div>
             </Card>
 
@@ -237,7 +237,7 @@ export default function Home() {
               </h3>
 
               <div className="flex justify-center sm:justify-end">
-                <HashLink to="/roadmap#corporate" className='btn-primary'>Descubre más</HashLink>
+                <HashLink to="/roadmap#corporate" className='btn-primary-outline'>Descubre más</HashLink>
               </div>
             </Card>
           </div>
@@ -277,7 +277,7 @@ export default function Home() {
               Planifica para el éxito, incluso en tiempos difíciles
             </p>
             <div className="flex justify-center sm:justify-end mt-5">
-              <HashLink to="/manejo-crisis#manejo-crisis" className='btn-primary'>Descubre más</HashLink>
+              <HashLink to="/manejo-crisis#manejo-crisis" className='btn-primary-outline'>Descubre más</HashLink>
             </div>
           </Card>
 
@@ -289,12 +289,10 @@ export default function Home() {
               Invierte en tu talento, cosecha resultados excepcionales
             </p>
             <div className="flex justify-center sm:justify-end mt-5">
-              <HashLink to="/estrategia-compensacion#compensation-strategy" className='btn-primary'>Descubre
+              <HashLink to="/estrategia-compensacion#compensation-strategy" className='btn-primary-outline'>Descubre
                 más</HashLink>
             </div>
           </Card>
-
-
         </div>
       </ContainerStroke>
       {/* End Other services (Manejo de crisis y estrategias de compensación)*/}
@@ -319,7 +317,7 @@ export default function Home() {
                 Centraliza, automatiza y colabora en un solo lugar
               </p>
 
-              <HashLink to="/cts#cts" className='btn-tertiary'>Próximamente</HashLink>
+              <HashLink to="/cts#cts" className='btn-secondary'>Próximamente</HashLink>
             </div>
           </Card>
         </div>

@@ -23,27 +23,27 @@ export default function Footer() {
           <div className="flex flex-col md:flex-row md:gap-7 lg:gap-3 xl:gap-5">
             <ul className='flex flex-col gap-3 p-0 my-5 lg:my-0'>
               <li>
-                <HashLink to="/#inicio" className="text-sm lg:text-base font-bold text-Dark-Violet">
+                <HashLink to="/#inicio" className="btn-link font-bold">
                   Inicio
                 </HashLink>
               </li>
               <li>
-                <HashLink to="/sobre-nosotros#about-us" className="text-sm lg:text-base font-bold text-Dark-Violet">
+                <HashLink to="/sobre-nosotros#about-us" className="btn-link font-bold">
                   ¿Quiénes somos?
                 </HashLink>
               </li>
               <li>
-                <HashLink to="/contactanos#contact-us" className="text-sm lg:text-base font-bold text-Dark-Violet">
+                <HashLink to="/contactanos#contact-us" className="btn-link font-bold">
                   Contáctanos
                 </HashLink>
               </li>
               <li>
-                <HashLink to="/politica-privacidad#politica-privacidad" className="text-sm lg:text-base font-bold text-Dark-Violet">
+                <HashLink to="/politica-privacidad#politica-privacidad" className="btn-link font-bold">
                   Política de privacidad
                 </HashLink>
               </li>
               <li>
-                <HashLink to="/terminos-condiciones#terminos-condiciones" className="text-sm lg:text-base font-bold text-Dark-Violet">
+                <HashLink to="/terminos-condiciones#terminos-condiciones" className="btn-link font-bold">
                   Términos y condiciones
                 </HashLink>
               </li>
@@ -51,27 +51,27 @@ export default function Footer() {
 
             <ul className='flex flex-col gap-3 p-0 my-5 lg:my-0'>
               <li>
-                <HashLink to="/roadmap#roadmap" className="text-sm lg:text-base font-bold text-Dark-Violet">
+                <HashLink to="/roadmap#roadmap" className="btn-link font-bold">
                   Roadmap
                 </HashLink>
               </li>
               <li>
-                <HashLink to="/roadmap#premium" className="text-sm lg:text-base text-Dark-Violet">
+                <HashLink to="/roadmap#premium" className="btn-link">
                   Roadmap Premium
                 </HashLink>
               </li>
               <li>
-                <HashLink to="/roadmap#corporate" className="text-sm lg:text-base text-Dark-Violet">
+                <HashLink to="/roadmap#corporate" className="btn-link">
                   Corporate Roadmap
                 </HashLink>
               </li>
               <li>
-                <HashLink to="/manejo-crisis#manejo-crisis" className="text-sm lg:text-base font-bold text-Dark-Violet">
+                <HashLink to="/manejo-crisis#manejo-crisis" className="btn-link font-bold">
                   Manejo de Crisis
                 </HashLink>
               </li>
               <li>
-                <HashLink to="/manejo-crisis#downsizing" className="text-sm lg:text-base text-Dark-Violet">
+                <HashLink to="/manejo-crisis#downsizing" className="btn-link">
                   Downsizing
                 </HashLink>
               </li>
@@ -79,22 +79,22 @@ export default function Footer() {
 
             <ul className='flex flex-col gap-3 p-0 my-5 lg:my-0'>
               <li>
-                <HashLink to="/estrategia-sindical#estrategia-sindical" className="text-sm lg:text-base font-bold text-Dark-Violet">
+                <HashLink to="/estrategia-sindical#estrategia-sindical" className="btn-link font-bold">
                   Estrategia Sindical
                 </HashLink>
               </li>
               <li>
-                <HashLink to="/estrategia-sindical#negociacion-colectiva" className="text-sm lg:text-base text-Dark-Violet">
+                <HashLink to="/estrategia-sindical#negociacion-colectiva" className="btn-link">
                   Negociación colectiva
                 </HashLink>
               </li>
               <li>
-                <HashLink to="/estrategia-sindical#manejo-conflictos" className="text-sm lg:text-base text-Dark-Violet">
+                <HashLink to="/estrategia-sindical#manejo-conflictos" className="btn-link">
                   Manejo de conflictos
                 </HashLink>
               </li>
               <li>
-                <HashLink to="/estrategia-compensacion#compensation-strategy" className="text-sm lg:text-base font-bold text-Dark-Violet">
+                <HashLink to="/estrategia-compensacion#compensation-strategy" className="btn-link font-bold">
                   Estrategia de compensación
                 </HashLink>
               </li>

@@ -28,7 +28,7 @@ export default function Cta({className,content, button}) {
           {content.subtitle.text}
         </p>
 
-        <HashLink to={button.href ?? '/'} className='btn-tertiary'>{button.text}</HashLink>
+        <HashLink to={button.href ?? '/'} className='btn-secondary'>{button.text}</HashLink>
       </div>
     </Card>
   );

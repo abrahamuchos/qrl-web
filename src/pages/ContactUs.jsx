@@ -22,8 +22,10 @@ export default function ContactUs() {
       })
       .then(
         () => {
+          window.scrollTo(0, 0);
           console.log('SUCCESS!');
           setIsSuccess(true);
+
         },
         (error) => {
           alert('Upps... Algo a ocurrido, por favor intenta de nuevo')
@@ -209,7 +211,7 @@ export default function ContactUs() {
                     <button
                       type="submit"
                       disabled={!captchaToken}
-                      className="w-full bg-slate-600 text-white py-2 px-4 rounded-md hover:bg-slate-700 transition-colors duration-200"
+                      className="btn-contact w-full"
                     >
                       Enviar
                     </button>
