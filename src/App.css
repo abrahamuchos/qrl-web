@@ -57,8 +57,23 @@ html,body{
   .btn-primary{
     @apply rounded-xl border-[#100D2C] border-solid border-2 px-6 py-3  text-base lg:px-7 lg:py-4
   }
+
+  .btn-primary-outline{
+    @apply rounded-xl border-Dark-Violet bg-transparent border-solid border-2 px-6 py-3 text-base lg:px-7 lg:py-4
+    hover:border-Very-dark-blue  hover:bg-Other-Very-dark-blue hover:shadow-sm hover:text-white
+    transition-all duration-700 ease-in-out
+    active:scale-95;
+  }
+
   .btn-secondary{
     @apply rounded-xl border-white border-solid border-2 px-6 py-3  text-base text-white lg:px-7 lg:py-4
+  }
+
+  .btn-secondary-outline{
+    @apply rounded-xl border-white border-solid border-2 px-6 py-3  text-base text-white lg:px-7 lg:py-4
+    hover:bg-white hover:shadow-sm hover:text-Very-dark-gray
+    transition-all duration-700 ease-in-out
+    active:scale-95;
   }
 
   .btn-tertiary{
