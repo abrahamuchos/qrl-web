@@ -65,6 +65,15 @@ html,body{
     @apply rounded-xl bg-white border-white border-solid border-2 px-6 py-3  text-base text-Regular-gray lg:px-7 lg:py-4
   }
 
+  .btn-contact{
+    @apply bg-slate-600 text-white py-2 px-4 rounded-md
+    hover:bg-slate-700 transition-colors duration-200 hover:cursor-pointer
+    disabled:bg-slate-400 disabled:cursor-not-allowed
+    focus:outline-none focus:ring-2 focus:ring-slate-500 focus:ring-offset-2;
+  }
+
+
+
   .text-shadow {
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
   }
