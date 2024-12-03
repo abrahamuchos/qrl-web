@@ -1,17 +1,19 @@
 import { useRef, useState } from "react";
+import { Link } from "react-router-dom";
 import Card from "../components/Card.jsx";
+import useRecaptcha from "../hooks/useRecaptcha.jsx";
 import emailjs from '@emailjs/browser';
+import ReCAPTCHA  from "react-google-recaptcha";
 
 import stroke from "../assets/img/stroke-16.png";
-import { Link } from "react-router-dom";
 
 export default function ContactUs() {
   const form = useRef();
   const [isSuccess, setIsSuccess] = useState(false);
+  const {captchaToken, setCaptchaToken, recaptchaRef, handleRecaptcha} = useRecaptcha();
 
   const handleSubmit = (e) => {
-    e.preventDefault()
-    // console.log('Data>> ', form.current);
+    e.preventDefault();
 
     setIsSuccess(true);
     emailjs
@@ -194,9 +196,19 @@ export default function ContactUs() {
                       />
                       <small className='block text-end text-xs text-Regular-gray'>500 caracteres máx.</small>
                     </div>
+                    
+                    <div>
+                      <ReCAPTCHA
+                        ref={recaptchaRef}
+                        sitekey={import.meta.env.VITE_RECAPTCHA_SITE_KEY}
+                        onChange={handleRecaptcha}
+                        size='normal'
+                      />
+                    </div>
 
                     <button
                       type="submit"
+                      disabled={!captchaToken}
                       className="w-full bg-slate-600 text-white py-2 px-4 rounded-md hover:bg-slate-700 transition-colors duration-200"
                     >
                       Enviar
