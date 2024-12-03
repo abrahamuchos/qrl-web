@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Card from "../components/Card.jsx";
 import useRecaptcha from "../hooks/useRecaptcha.jsx";
 import emailjs from '@emailjs/browser';
-import { ReCAPTCHA } from "react-google-recaptcha";
+import ReCAPTCHA  from "react-google-recaptcha";
 
 import stroke from "../assets/img/stroke-16.png";
 
@@ -198,12 +198,11 @@ export default function ContactUs() {
                     </div>
                     
                     <div>
-                      <h1>Hello</h1>
                       <ReCAPTCHA
-                        // ref={recaptchaRef}
-                        sitekey="6Lftg5EqAAAAAAnsiShFnGlvboEzdVQ1e_ysCXG3"
-                        // onChange={handleRecaptcha}
-                        size='compact'
+                        ref={recaptchaRef}
+                        sitekey={import.meta.env.VITE_RECAPTCHA_SITE_KEY}
+                        onChange={handleRecaptcha}
+                        size='normal'
                       />
                     </div>
 
