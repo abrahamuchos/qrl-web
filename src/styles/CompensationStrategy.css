@@ -1,0 +1,32 @@
+#compensation-strategy .bg-puzzle{
+  background-image: url('/src/assets/img/puzzle-bg-mobile.png'), url("/src/assets/img/puzzle2-bg-mobile.png");
+  background-position: right 37%, left bottom;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 45%;
+}
+
+/*** Media Queries ***/
+
+/*SM*/
+@media only screen and (min-width: 640px) {
+  #compensation-strategy .bg-puzzle{
+    background-size: 35%;
+  }
+}
+
+/*MD*/
+@media only screen and (min-width: 768px) {
+  #compensation-strategy .bg-puzzle{
+    background-size: 250px;
+  }
+}
+
+/* LG*/
+@media only screen and (min-width: 1024px) {
+  #compensation-strategy .bg-puzzle{
+    background-image: url('/src/assets/img/puzzle-bg.png'), url("/src/assets/img/puzzle2-bg.png");
+    background-position: right top, left bottom;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 45%;
+  }
+}
