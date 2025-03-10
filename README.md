@@ -52,7 +52,7 @@ To see the layout check `QRL-Wireframe.fig`
 ## 🧑‍💻 Authors
 
 - [@abrahamuchos](https://github.com/abrahamuchos)
-- [Contact mail](mailto:j.abraham29@gmail.com)
+- [Contact mail](mailto:abrahamuchos@gmail.com)
 
 
 ## 📄 License
