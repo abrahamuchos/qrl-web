@@ -43,6 +43,12 @@ $  npm install
 
 3. Run dev `npm run dev` or run to production `npm run build`
 
+## 🗂️ Docs
+
+To see the design of the website, go to `docs/QRL-website-client-final.fig`
+To see the layout check `QRL-Wireframe.fig`
+
+
 ## 🧑‍💻 Authors
 
 - [@abrahamuchos](https://github.com/abrahamuchos)
